@@ -5,12 +5,23 @@ import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import ClientsSection from '../components/ClientsSection';
 import Footer from '../components/Footer';
+import CustomCursor from '../components/CustomCursor';
 import BackgroundEffects from '../components/BackgroundEffects';
 
 export default function Home() {
   return (
     <>
-      <style jsx>{`
+      <style jsx global>{`
+        /* Hide default cursor */
+        * {
+          cursor: none !important;
+        }
+        
+        /* Ensure clickable elements are still functional */
+        a, button, input, textarea, [role="button"], [onclick] {
+          cursor: none !important;
+        }
+        
         @keyframes gridMove {
           0% { transform: translate(0, 0); }
           100% { transform: translate(50px, 50px); }
@@ -44,6 +55,9 @@ export default function Home() {
         }
       `}</style>
       <div className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden relative">
+        {/* Custom Cursor */}
+        <CustomCursor />
+        
         {/* Background Effects */}
         <BackgroundEffects />
 
