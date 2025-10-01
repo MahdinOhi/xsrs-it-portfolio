@@ -22,6 +22,18 @@ export default function Home() {
           cursor: none !important;
         }
         
+        /* Ensure sticky navbar works properly */
+        nav {
+          position: sticky !important;
+          top: 0 !important;
+          z-index: 50 !important;
+        }
+        
+        /* Smooth scrolling for the entire page */
+        html {
+          scroll-behavior: smooth;
+        }
+        
         @keyframes gridMove {
           0% { transform: translate(0, 0); }
           100% { transform: translate(50px, 50px); }
@@ -54,7 +66,7 @@ export default function Home() {
           animation: glow 2s ease-in-out infinite;
         }
       `}</style>
-      <div className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden relative">
+      <div className="min-h-screen bg-[#0a0a0a] text-white relative">
         {/* Custom Cursor */}
         <CustomCursor />
         
@@ -65,16 +77,40 @@ export default function Home() {
         <Navigation />
 
         {/* Hero Section */}
-        <HeroSection />
+        <section id="home">
+          <HeroSection />
+        </section>
+
+        {/* About Section - We'll add this later */}
+        <section id="about" className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)] mb-4">About Us</h2>
+            <p className="text-gray-300 font-[var(--font-press-start-2p)]">Coming Soon...</p>
+          </div>
+        </section>
 
         {/* Services Section */}
-        <ServicesSection />
+        <section id="services">
+          <ServicesSection />
+        </section>
+
+        {/* Portfolio Section - We'll add this later */}
+        <section id="portfolio" className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)] mb-4">Our Portfolio</h2>
+            <p className="text-gray-300 font-[var(--font-press-start-2p)]">Coming Soon...</p>
+          </div>
+        </section>
 
         {/* Our Clients Section */}
-        <ClientsSection />
+        <section id="clients">
+          <ClientsSection />
+        </section>
 
-        {/* Footer */}
-        <Footer />
+        {/* Contact Section */}
+        <section id="contact">
+          <Footer />
+        </section>
       </div>
     </>
   );

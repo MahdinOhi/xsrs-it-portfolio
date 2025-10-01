@@ -17,6 +17,21 @@ export default function Footer() {
     });
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    scrollToSection(sectionId);
+  };
+
   return (
     <>
       <style jsx>{`
@@ -106,21 +121,21 @@ export default function Footer() {
               </h4>
               <nav className="space-y-3">
                 {[
-                  { name: 'Home', href: '#home' },
-                  { name: 'About Us', href: '#about' },
-                  { name: 'Services', href: '#services' },
-                  { name: 'Portfolio', href: '#portfolio' },
-                  { name: 'Contact', href: '#contact' }
+                  { name: 'Home', sectionId: 'home' },
+                  { name: 'About Us', sectionId: 'about' },
+                  { name: 'Services', sectionId: 'services' },
+                  { name: 'Portfolio', sectionId: 'portfolio' },
+                  { name: 'Contact', sectionId: 'contact' }
                 ].map((link, index) => (
-                  <a
+                  <button
                     key={link.name}
-                    href={link.href}
-                    className="block text-gray-300 hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-sm relative group hover:translate-x-2"
+                    onClick={(e) => handleNavClick(e, link.sectionId)}
+                    className="block text-gray-300 hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-sm relative group hover:translate-x-2 w-full text-left"
                     style={{transitionDelay: `${index * 0.1}s`}}
                   >
                     <span className="relative z-10">{link.name}</span>
                     <div className="absolute left-0 top-1/2 w-0 h-0.5 bg-[#ff6600] group-hover:w-full transition-all duration-300 -translate-y-1/2"></div>
-                  </a>
+                  </button>
                 ))}
               </nav>
             </div>

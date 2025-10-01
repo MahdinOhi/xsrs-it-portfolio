@@ -1,61 +1,108 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+    // Close mobile menu if open
+    setIsMobileMenuOpen(false);
+  };
+
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    scrollToSection(sectionId);
+  };
+
   return (
     <>
+      <style jsx>{`
+        .sticky-nav {
+          position: sticky !important;
+          top: 0 !important;
+          z-index: 50 !important;
+        }
+      `}</style>
       {/* Navigation */}
-      <nav className="relative z-10 flex items-center justify-center px-4 sm:px-8 py-4 sm:py-6">
+      <nav className={`sticky-nav flex items-center justify-center px-4 sm:px-8 py-4 sm:py-6 transition-all duration-300 ${
+        isScrolled 
+          ? 'bg-[#0a0a0a]/95 backdrop-blur-lg border-b border-[#ff6600]/40 shadow-lg shadow-[#ff6600]/10' 
+          : 'bg-[#0a0a0a]/80 backdrop-blur-md border-b border-[#ff6600]/20'
+      }`}>
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6 lg:space-x-8 bg-black/20 backdrop-blur-sm rounded-full px-6 lg:px-8 py-3 lg:py-4 border border-[#ff6600]/30 hover:border-[#ff6600]/60 hover:bg-black/30 transition-all duration-300 hover:shadow-lg hover:shadow-[#ff6600]/20">
-          <a 
-            href="#home" 
+        <div className={`hidden md:flex items-center space-x-6 lg:space-x-8 backdrop-blur-sm rounded-full px-6 lg:px-8 py-3 lg:py-4 border transition-all duration-300 hover:shadow-lg hover:shadow-[#ff6600]/20 ${
+          isScrolled 
+            ? 'bg-black/40 border-[#ff6600]/50 hover:border-[#ff6600]/70 hover:bg-black/50' 
+            : 'bg-black/20 border-[#ff6600]/30 hover:border-[#ff6600]/60 hover:bg-black/30'
+        }`}>
+          <button 
+            onClick={(e) => handleNavClick(e, 'home')}
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Home</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
-          <a 
-            href="#about" 
+          </button>
+          <button 
+            onClick={(e) => handleNavClick(e, 'about')}
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">About Us</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
-          <a 
-            href="#services" 
+          </button>
+          <button 
+            onClick={(e) => handleNavClick(e, 'services')}
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Services</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
-          <a 
-            href="#portfolio" 
+          </button>
+          <button 
+            onClick={(e) => handleNavClick(e, 'portfolio')}
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Portfolios</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
-          <a 
-            href="#contact" 
+          </button>
+          <button 
+            onClick={(e) => handleNavClick(e, 'contact')}
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Contact Us</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
+          </button>
         </div>
         
         {/* Enhanced Mobile Menu Button */}
         <button 
           onClick={toggleMobileMenu}
-          className="md:hidden text-white hover:text-[#ff6600] transition-all duration-300 p-3 rounded-lg hover:bg-[#ff6600]/10 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)] relative"
+          className={`md:hidden text-white hover:text-[#ff6600] transition-all duration-300 p-3 rounded-lg hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)] relative ${
+            isScrolled 
+              ? 'bg-black/30 border border-[#ff6600]/30 hover:bg-[#ff6600]/20' 
+              : 'hover:bg-[#ff6600]/10'
+          }`}
           aria-label="Toggle mobile menu"
         >
           {/* Animated Hamburger Lines */}
@@ -102,51 +149,46 @@ export default function Navigation() {
           
           <div className="flex flex-col items-center justify-center h-full space-y-6 px-4">
             {/* Menu Items with Staggered Animation */}
-            <a 
-              href="#home" 
+            <button 
+              onClick={(e) => handleNavClick(e, 'home')}
               className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
               style={{animationDelay: '0.1s'}}
-              onClick={() => setIsMobileMenuOpen(false)}
             >
               <span className="relative z-10">Home</span>
               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </a>
-            <a 
-              href="#about" 
+            </button>
+            <button 
+              onClick={(e) => handleNavClick(e, 'about')}
               className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
               style={{animationDelay: '0.2s'}}
-              onClick={() => setIsMobileMenuOpen(false)}
             >
               <span className="relative z-10">About Us</span>
               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </a>
-            <a 
-              href="#services" 
+            </button>
+            <button 
+              onClick={(e) => handleNavClick(e, 'services')}
               className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
               style={{animationDelay: '0.3s'}}
-              onClick={() => setIsMobileMenuOpen(false)}
             >
               <span className="relative z-10">Services</span>
               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </a>
-            <a 
-              href="#portfolio" 
+            </button>
+            <button 
+              onClick={(e) => handleNavClick(e, 'portfolio')}
               className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
               style={{animationDelay: '0.4s'}}
-              onClick={() => setIsMobileMenuOpen(false)}
             >
               <span className="relative z-10">Portfolios</span>
               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </a>
-            <a 
-              href="#contact" 
+            </button>
+            <button 
+              onClick={(e) => handleNavClick(e, 'contact')}
               className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
               style={{animationDelay: '0.5s'}}
-              onClick={() => setIsMobileMenuOpen(false)}
             >
               <span className="relative z-10">Contact Us</span>
               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </a>
+            </button>
             
             {/* Enhanced Close Button */}
             <button 
