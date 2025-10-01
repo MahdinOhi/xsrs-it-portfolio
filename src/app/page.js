@@ -2,6 +2,7 @@
 
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection';
+import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import ClientsSection from '../components/ClientsSection';
 import Footer from '../components/Footer';
@@ -81,25 +82,14 @@ export default function Home() {
           <HeroSection />
         </section>
 
-        {/* About Section - We'll add this later */}
-        <section id="about" className="min-h-screen flex items-center justify-center">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)] mb-4">About Us</h2>
-            <p className="text-gray-300 font-[var(--font-press-start-2p)]">Coming Soon...</p>
-          </div>
+        {/* About Section */}
+        <section id="about">
+          <AboutSection />
         </section>
 
         {/* Services Section */}
         <section id="services">
           <ServicesSection />
-        </section>
-
-        {/* Portfolio Section - We'll add this later */}
-        <section id="portfolio" className="min-h-screen flex items-center justify-center">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)] mb-4">Our Portfolio</h2>
-            <p className="text-gray-300 font-[var(--font-press-start-2p)]">Coming Soon...</p>
-          </div>
         </section>
 
         {/* Our Clients Section */}

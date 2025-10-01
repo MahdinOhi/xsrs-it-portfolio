@@ -124,7 +124,6 @@ export default function Footer() {
                   { name: 'Home', sectionId: 'home' },
                   { name: 'About Us', sectionId: 'about' },
                   { name: 'Services', sectionId: 'services' },
-                  { name: 'Portfolio', sectionId: 'portfolio' },
                   { name: 'Contact', sectionId: 'contact' }
                 ].map((link, index) => (
                   <button

@@ -80,13 +80,6 @@ export default function Navigation() {
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
           </button>
           <button 
-            onClick={(e) => handleNavClick(e, 'portfolio')}
-            className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
-          >
-            <span className="relative z-10">Portfolios</span>
-            <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </button>
-          <button 
             onClick={(e) => handleNavClick(e, 'contact')}
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
@@ -171,14 +164,6 @@ export default function Navigation() {
               style={{animationDelay: '0.3s'}}
             >
               <span className="relative z-10">Services</span>
-              <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </button>
-            <button 
-              onClick={(e) => handleNavClick(e, 'portfolio')}
-              className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
-              style={{animationDelay: '0.4s'}}
-            >
-              <span className="relative z-10">Portfolios</span>
               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
             </button>
             <button 
