@@ -72,7 +72,7 @@ export default function Footer() {
         }
       `}</style>
       
-      <footer className="relative bg-[#0a0a0a] border-t border-[#00abf0]/20 overflow-hidden">
+      <footer className="relative bg-[#0a0a0a] border-t border-[#00abf0]/20 overflow-hidden py-16 md:py-20">
         {/* Background Effects */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-1/4 w-2 h-2 bg-[#00abf0] rounded-full animate-float"></div>
@@ -241,7 +241,6 @@ export default function Footer() {
                 onClick={scrollToTop}
                 className="flex items-center space-x-2 text-[#00abf0] hover:text-white transition-all duration-300 font-audiowide text-sm group"
               >
-                <span>Back to Top</span>
                 <div className="w-6 h-6 border border-[#00abf0] rotate-45 group-hover:bg-[#00abf0] group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
                   <div className="w-2 h-2 bg-[#00abf0] rotate-45 group-hover:bg-black transition-colors duration-300"></div>
                 </div>
@@ -263,9 +262,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        {/* Animated Border */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#ff6600] to-transparent animate-pulse"></div>
       </footer>
     </>
   );

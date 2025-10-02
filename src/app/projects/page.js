@@ -237,7 +237,7 @@ export default function Projects() {
         <Navigation />
 
         {/* Projects Hero Section */}
-        <section className="relative z-10 pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <section className="relative z-10 pt-20 pb-16 md:pb-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
             <div className={`space-y-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="text-[#00abf0] font-audiowide text-sm uppercase tracking-wider">
@@ -256,7 +256,7 @@ export default function Projects() {
         </section>
 
         {/* Category Filter */}
-        <section className="relative z-10 pb-8 px-4 sm:px-6 lg:px-8">
+        <section className="relative z-10 pb-8 md:pb-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap justify-center gap-4">
               {categories.map((category, index) => (
@@ -278,7 +278,7 @@ export default function Projects() {
         </section>
 
         {/* Projects Grid */}
-        <section className="relative z-10 pb-16 px-4 sm:px-6 lg:px-8">
+        <section className="relative z-10 pb-16 md:pb-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             
             {/* Projects Stats */}
@@ -457,7 +457,7 @@ export default function Projects() {
         </section>
 
         {/* CTA Section */}
-        <section className="relative z-10 py-16 px-4 sm:px-6 lg:px-8">
+        <section className="relative z-10 py-16 md:py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-white font-audiowide">

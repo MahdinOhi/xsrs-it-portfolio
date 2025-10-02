@@ -29,9 +29,9 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative z-10 min-h-[calc(100vh-80px)] px-4 sm:px-6 lg:px-8 pb-0">
+    <section className="relative z-10 min-h-[calc(100vh-80px)] px-4 sm:px-6 lg:px-8 py-16 md:py-24">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
           
           {/* Left Column - Text Content */}
           <div className={`text-white transition-all duration-1000 ease-out ${
@@ -39,7 +39,7 @@ export default function HeroSection() {
               ? 'opacity-100 translate-x-0' 
               : 'opacity-0 -translate-x-10'
           }`}>
-            <div className="space-y-4 sm:space-y-6 lg:space-y-8">
+            <div className="space-y-6 sm:space-y-8 lg:space-y-10">
               <div className="space-y-2">
                 <div 
                   className={`text-base sm:text-lg md:text-xl lg:text-2xl text-[#00abf0] font-audiowide transition-all duration-1000 ease-out ${

@@ -32,7 +32,7 @@ export default function Navigation() {
         }
       `}</style>
       {/* Navigation */}
-      <nav className={`sticky-nav flex items-center justify-center px-4 sm:px-8 py-4 sm:py-6 transition-all duration-300 ${
+      <nav className={`sticky-nav flex items-center justify-center px-4 sm:px-6 lg:px-8 py-4 sm:py-5 transition-all duration-300 ${
         isScrolled 
           ? 'bg-[#0a0a0a]/95 backdrop-blur-lg border-b border-[#00abf0]/40 shadow-lg shadow-[#00abf0]/10' 
           : 'bg-[#0a0a0a]/80 backdrop-blur-md border-b border-[#00abf0]/20'

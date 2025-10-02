@@ -6,6 +6,11 @@ import CustomCursor from '../../components/CustomCursor';
 import BackgroundEffects from '../../components/BackgroundEffects';
 import CEOSection from '../../components/CEOSection';
 import Footer from '../../components/Footer';
+import GenericHeroSection from '../../components/GenericHeroSection';
+import CategoryFilter from '../../components/CategoryFilter';
+import ProjectCard from '../../components/ProjectCard';
+import StatsSection from '../../components/StatsSection';
+import CTASection from '../../components/CTASection';
 
 export default function Portfolio() {
   const projects = [
@@ -203,31 +208,20 @@ export default function Portfolio() {
         {/* Navigation */}
         <Navigation />
 
-        {/* Portfolio Hero Section */}
-        <section className="relative z-10 pt-20 pb-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto text-center">
-            <div className={`space-y-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="text-[#00abf0] font-audiowide text-sm uppercase tracking-wider">
-                Our Portfolio
-              </div>
-              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold text-white font-audiowide leading-tight">
-                Digital Solutions That
-                <span className="text-[#00abf0] block">Drive Success</span>
-              </h1>
-              <p className="text-lg text-gray-300 leading-relaxed font-audiowide max-w-3xl mx-auto">
-                Explore our portfolio of innovative projects that showcase our expertise in web development, 
-                mobile apps, AI solutions, and cloud infrastructure.
-              </p>
-            </div>
-          </div>
-        </section>
+        <GenericHeroSection
+          title="Digital Solutions That"
+          accentText="Drive Success"
+          subtitle="Our Portfolio"
+          description="Explore our portfolio of innovative projects that showcase our expertise in web development, mobile apps, AI solutions, and cloud infrastructure."
+          accentColor="text-[#00abf0]"
+        />
 
         {/* CEO Section */}
         <CEOSection />
 
-        {/* Category Filter */}
-        <section className="relative z-10 pb-8 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
+            {/* Category Filter */}
+            <section className="relative z-10 pb-8 md:pb-12 px-4 sm:px-6 lg:px-8">
+              <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap justify-center gap-4">
               {categories.map((category, index) => (
                 <button
@@ -247,9 +241,9 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Projects Grid */}
-        <section className="relative z-10 pb-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
+            {/* Projects Grid */}
+            <section className="relative z-10 pb-16 md:pb-20 px-4 sm:px-6 lg:px-8">
+              <div className="max-w-7xl mx-auto">
             
             {/* Projects Stats */}
             <div className={`mb-12 grid grid-cols-2 md:grid-cols-4 gap-6 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
@@ -426,9 +420,9 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="relative z-10 py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
+            {/* CTA Section */}
+            <section className="relative z-10 py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+              <div className="max-w-4xl mx-auto text-center">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-white font-audiowide">
                 Ready to Start Your Project?

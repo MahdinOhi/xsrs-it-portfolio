@@ -87,27 +87,27 @@ export default function Home() {
         <Navigation />
 
         {/* Hero Section */}
-        <section id="home">
+        <section id="home" className="relative">
           <HeroSection />
         </section>
 
         {/* About Section */}
-        <section id="about">
+        <section id="about" className="relative py-16 md:py-24">
           <AboutSection />
         </section>
 
         {/* Services Section */}
-        <section id="services">
+        <section id="services" className="relative py-16 md:py-24">
           <ServicesSection />
         </section>
 
         {/* Our Clients Section */}
-        <section id="clients">
+        <section id="clients" className="relative py-16 md:py-24">
           <ClientsSection />
         </section>
 
         {/* Contact Section */}
-        <section id="contact">
+        <section id="contact" className="relative">
           <Footer />
         </section>
       </div>

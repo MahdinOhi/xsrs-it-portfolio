@@ -40,7 +40,7 @@ export default function AboutSection() {
         }
       `}</style>
       
-      <section className="relative min-h-screen bg-[#0a0a0a] py-16 lg:py-24 overflow-hidden">
+      <section className="relative min-h-screen bg-[#0a0a0a] py-16 md:py-24 overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#00abf0] rounded-full animate-float"></div>
