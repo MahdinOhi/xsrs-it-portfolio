@@ -89,10 +89,10 @@ export default function Footer() {
             {/* Company Info */}
             <div className={`space-y-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="space-y-3">
-                <h3 className="text-2xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)]">
+                <h3 className="text-2xl font-bold text-[#ff6600] font-audiowide">
                   XSRS-IT
                 </h3>
-                <p className="text-gray-300 text-sm leading-relaxed font-[var(--font-press-start-2p)]">
+                <p className="text-gray-300 text-sm leading-relaxed font-audiowide">
                   Where Digital Dreams Take Flight. Empowering startups and igniting innovation through cutting-edge technology solutions.
                 </p>
               </div>
@@ -101,22 +101,22 @@ export default function Footer() {
               <div className="space-y-2">
                 <div className="flex items-center space-x-3 text-gray-300 hover:text-[#ff6600] transition-colors duration-300 group">
                   <div className="w-2 h-2 bg-[#ff6600] rounded-full animate-pulse"></div>
-                  <span className="text-sm font-[var(--font-press-start-2p)]">hello@xsrs-it.com</span>
+                  <span className="text-sm font-audiowide">hello@xsrs-it.com</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300 hover:text-[#ff6600] transition-colors duration-300 group">
                   <div className="w-2 h-2 bg-[#ff6600] rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                  <span className="text-sm font-[var(--font-press-start-2p)]">+1 (555) 123-4567</span>
+                  <span className="text-sm font-audiowide">+1 (555) 123-4567</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300 hover:text-[#ff6600] transition-colors duration-300 group">
                   <div className="w-2 h-2 bg-[#ff6600] rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-                  <span className="text-sm font-[var(--font-press-start-2p)]">San Francisco, CA</span>
+                  <span className="text-sm font-audiowide">San Francisco, CA</span>
                 </div>
               </div>
             </div>
 
             {/* Quick Links */}
             <div className={`space-y-4 transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <h4 className="text-lg font-bold text-white font-[var(--font-press-start-2p)]">
+              <h4 className="text-lg font-bold text-white font-audiowide">
                 Quick Links
               </h4>
               <nav className="space-y-3">
@@ -124,24 +124,38 @@ export default function Footer() {
                   { name: 'Home', sectionId: 'home' },
                   { name: 'About Us', sectionId: 'about' },
                   { name: 'Services', sectionId: 'services' },
+                  { name: 'Portfolio', href: '/portfolio' },
+                  { name: 'Projects', href: '/projects' },
                   { name: 'Contact', sectionId: 'contact' }
                 ].map((link, index) => (
-                  <button
-                    key={link.name}
-                    onClick={(e) => handleNavClick(e, link.sectionId)}
-                    className="block text-gray-300 hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-sm relative group hover:translate-x-2 w-full text-left"
-                    style={{transitionDelay: `${index * 0.1}s`}}
-                  >
-                    <span className="relative z-10">{link.name}</span>
-                    <div className="absolute left-0 top-1/2 w-0 h-0.5 bg-[#ff6600] group-hover:w-full transition-all duration-300 -translate-y-1/2"></div>
-                  </button>
+                  link.href ? (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      className="block text-gray-300 hover:text-[#ff6600] transition-all duration-300 font-audiowide text-sm relative group hover:translate-x-2 w-full text-left"
+                      style={{transitionDelay: `${index * 0.1}s`}}
+                    >
+                      <span className="relative z-10">{link.name}</span>
+                      <div className="absolute left-0 top-1/2 w-0 h-0.5 bg-[#ff6600] group-hover:w-full transition-all duration-300 -translate-y-1/2"></div>
+                    </a>
+                  ) : (
+                    <button
+                      key={link.name}
+                      onClick={(e) => handleNavClick(e, link.sectionId)}
+                      className="block text-gray-300 hover:text-[#ff6600] transition-all duration-300 font-audiowide text-sm relative group hover:translate-x-2 w-full text-left"
+                      style={{transitionDelay: `${index * 0.1}s`}}
+                    >
+                      <span className="relative z-10">{link.name}</span>
+                      <div className="absolute left-0 top-1/2 w-0 h-0.5 bg-[#ff6600] group-hover:w-full transition-all duration-300 -translate-y-1/2"></div>
+                    </button>
+                  )
                 ))}
               </nav>
             </div>
 
             {/* Services */}
             <div className={`space-y-4 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <h4 className="text-lg font-bold text-white font-[var(--font-press-start-2p)]">
+              <h4 className="text-lg font-bold text-white font-audiowide">
                 Our Services
               </h4>
               <div className="space-y-3">
@@ -158,7 +172,7 @@ export default function Footer() {
                     style={{transitionDelay: `${index * 0.1}s`}}
                   >
                     <div className="w-1.5 h-1.5 bg-[#ff6600] rounded-full animate-pulse"></div>
-                    <span className="text-sm font-[var(--font-press-start-2p)] group-hover:translate-x-1 transition-transform duration-300">
+                    <span className="text-sm font-audiowide group-hover:translate-x-1 transition-transform duration-300">
                       {service}
                     </span>
                   </div>
@@ -168,7 +182,7 @@ export default function Footer() {
 
             {/* Social Media & Newsletter */}
             <div className={`space-y-4 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <h4 className="text-lg font-bold text-white font-[var(--font-press-start-2p)]">
+              <h4 className="text-lg font-bold text-white font-audiowide">
                 Connect With Us
               </h4>
               
@@ -183,7 +197,7 @@ export default function Footer() {
                   <a
                     key={social.name}
                     href={social.href}
-                    className="w-10 h-10 bg-black/30 border border-[#ff6600]/30 rounded-lg flex items-center justify-center text-[#ff6600] hover:bg-[#ff6600] hover:text-black transition-all duration-300 font-[var(--font-press-start-2p)] text-xs hover:scale-110 hover:shadow-lg hover:shadow-[#ff6600]/30 relative group"
+                    className="w-10 h-10 bg-black/30 border border-[#ff6600]/30 rounded-lg flex items-center justify-center text-[#ff6600] hover:bg-[#ff6600] hover:text-black transition-all duration-300 font-audiowide text-xs hover:scale-110 hover:shadow-lg hover:shadow-[#ff6600]/30 relative group"
                     style={{transitionDelay: `${index * 0.1}s`}}
                     aria-label={social.name}
                   >
@@ -195,16 +209,16 @@ export default function Footer() {
 
               {/* Newsletter Signup */}
               <div className="space-y-3">
-                <p className="text-gray-300 text-sm font-[var(--font-press-start-2p)]">
+                <p className="text-gray-300 text-sm font-audiowide">
                   Stay updated with our latest innovations
                 </p>
                 <div className="flex space-x-2">
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="flex-1 px-3 py-2 bg-black/30 border border-[#ff6600]/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#ff6600] focus:ring-1 focus:ring-[#ff6600]/50 transition-all duration-300 font-[var(--font-press-start-2p)] text-xs"
+                    className="flex-1 px-3 py-2 bg-black/30 border border-[#ff6600]/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#ff6600] focus:ring-1 focus:ring-[#ff6600]/50 transition-all duration-300 font-audiowide text-xs"
                   />
-                  <button className="px-4 py-2 bg-[#ff6600] text-black rounded-lg hover:bg-[#ff6600]/80 transition-all duration-300 font-[var(--font-press-start-2p)] text-xs hover:scale-105 relative overflow-hidden group">
+                  <button className="px-4 py-2 bg-[#ff6600] text-black rounded-lg hover:bg-[#ff6600]/80 transition-all duration-300 font-audiowide text-xs hover:scale-105 relative overflow-hidden group">
                     <span className="relative z-10">Subscribe</span>
                     <div className="absolute inset-0 bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                   </button>
@@ -218,14 +232,14 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               
               {/* Copyright */}
-              <div className="text-gray-400 text-sm font-[var(--font-press-start-2p)]">
+              <div className="text-gray-400 text-sm font-audiowide">
                 © {currentYear} XSRS-IT. All rights reserved.
               </div>
 
               {/* Back to Top Button */}
               <button
                 onClick={scrollToTop}
-                className="flex items-center space-x-2 text-[#ff6600] hover:text-white transition-all duration-300 font-[var(--font-press-start-2p)] text-sm group"
+                className="flex items-center space-x-2 text-[#ff6600] hover:text-white transition-all duration-300 font-audiowide text-sm group"
               >
                 <span>Back to Top</span>
                 <div className="w-6 h-6 border border-[#ff6600] rotate-45 group-hover:bg-[#ff6600] group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
@@ -239,7 +253,7 @@ export default function Footer() {
                   <a
                     key={link}
                     href="#"
-                    className="text-gray-400 hover:text-[#ff6600] transition-colors duration-300 font-[var(--font-press-start-2p)] text-xs hover:underline"
+                    className="text-gray-400 hover:text-[#ff6600] transition-colors duration-300 font-audiowide text-xs hover:underline"
                     style={{transitionDelay: `${index * 0.1}s`}}
                   >
                     {link}

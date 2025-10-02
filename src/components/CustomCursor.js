@@ -24,9 +24,14 @@ export default function CustomCursor() {
     // Add hover detection for interactive elements
     const handleMouseOver = (e) => {
       const target = e.target;
-      const isInteractive = target.matches('a, button, input, textarea, [role="button"]') ||
-                           target.closest('a, button, input, textarea, [role="button"]');
+      const isInteractive = target.matches('a, button, input, textarea, [role="button"], nav a, nav button') ||
+                           target.closest('a, button, input, textarea, [role="button"], nav a, nav button');
       setIsHovering(isInteractive);
+      
+      // Debug logging for navbar elements
+      if (target.closest('nav')) {
+        console.log('Hovering over navbar element:', target.tagName, target.className);
+      }
     };
 
     const handleMouseOut = () => setIsHovering(false);
@@ -76,7 +81,7 @@ export default function CustomCursor() {
       
       {/* Main Cursor Circle */}
       <div
-        className={`fixed pointer-events-none z-50 transition-all duration-100 ease-out ${
+        className={`fixed pointer-events-none z-[9999] transition-all duration-100 ease-out ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
         style={{
@@ -86,9 +91,9 @@ export default function CustomCursor() {
         }}
       >
         <div
-          className={`w-6 h-6 rounded-full border-2 border-[#ff6600] bg-[#ff6600]/20 backdrop-blur-sm transition-all duration-300 ${
+          className={`w-8 h-8 rounded-full border-2 border-[#ff6600] bg-[#ff6600]/30 backdrop-blur-sm transition-all duration-300 ${
             isHovering 
-              ? 'scale-150 bg-[#ff6600]/30 border-[#ff6600] cursor-pulse cursor-glow' 
+              ? 'scale-150 bg-[#ff6600]/50 border-[#ff6600] cursor-pulse cursor-glow' 
               : 'scale-100'
           }`}
         >
@@ -99,7 +104,7 @@ export default function CustomCursor() {
 
       {/* Outer Ring */}
       <div
-        className={`fixed pointer-events-none z-40 transition-all duration-200 ease-out ${
+        className={`fixed pointer-events-none z-[9998] transition-all duration-200 ease-out ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
         style={{
@@ -109,9 +114,9 @@ export default function CustomCursor() {
         }}
       >
         <div
-          className={`w-12 h-12 rounded-full border border-[#ff6600]/30 transition-all duration-500 ${
+          className={`w-16 h-16 rounded-full border-2 border-[#ff6600]/50 transition-all duration-500 ${
             isHovering 
-              ? 'scale-200 border-[#ff6600]/60 animate-pulse' 
+              ? 'scale-200 border-[#ff6600]/80 animate-pulse' 
               : 'scale-100'
           }`}
         >
@@ -122,7 +127,7 @@ export default function CustomCursor() {
 
       {/* Trailing particles */}
       <div
-        className={`fixed pointer-events-none z-30 transition-all duration-300 ease-out ${
+        className={`fixed pointer-events-none z-[9997] transition-all duration-300 ease-out ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
         style={{
@@ -171,7 +176,7 @@ export default function CustomCursor() {
       {/* Click ripple effect */}
       {isHovering && (
         <div
-          className="fixed pointer-events-none z-50"
+          className="fixed pointer-events-none z-[9999]"
           style={{
             left: mousePosition.x,
             top: mousePosition.y,

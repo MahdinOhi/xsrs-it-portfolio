@@ -42,7 +42,7 @@ export default function HeroSection() {
             <div className="space-y-4 sm:space-y-6 lg:space-y-8">
               <div className="space-y-2">
                 <div 
-                  className={`text-base sm:text-lg md:text-xl lg:text-2xl text-[#ff6600] font-[var(--font-press-start-2p)] transition-all duration-1000 ease-out ${
+                  className={`text-base sm:text-lg md:text-xl lg:text-2xl text-[#ff6600] font-audiowide transition-all duration-1000 ease-out ${
                     isLoaded 
                       ? 'opacity-100 translate-y-0' 
                       : 'opacity-0 -translate-y-5'
@@ -51,7 +51,7 @@ export default function HeroSection() {
                   Welcome to
                 </div>
                 <h1 
-                  className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight font-[var(--font-press-start-2p)] text-white ${
+                  className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight font-audiowide text-white ${
                     glitchActive 
                       ? 'animate-pulse' 
                       : ''
@@ -61,7 +61,7 @@ export default function HeroSection() {
                 </h1>
               </div>
               
-              <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed font-[var(--font-press-start-2p)] max-w-lg">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed font-audiowide max-w-lg">
                 The best digital solutions for your business.
               </p>
               
@@ -72,7 +72,7 @@ export default function HeroSection() {
                 
                 <button
                   onMouseEnter={handleCtaHover}
-                  className={`px-6 sm:px-8 py-3 sm:py-4 bg-[#ff6600] text-black font-bold rounded-lg shadow-lg hover:shadow-[#ff6600]/50 transition-all duration-300 font-[var(--font-press-start-2p)] text-xs sm:text-sm hover:scale-105 border-2 border-[#ff6600] hover:bg-transparent hover:text-[#ff6600] relative overflow-hidden group ${
+                  className={`px-6 sm:px-8 py-3 sm:py-4 bg-[#ff6600] text-black font-bold rounded-lg shadow-lg hover:shadow-[#ff6600]/50 transition-all duration-300 font-audiowide text-xs sm:text-sm hover:scale-105 border-2 border-[#ff6600] hover:bg-transparent hover:text-[#ff6600] relative overflow-hidden group ${
                     isLoaded 
                       ? 'opacity-100 scale-100' 
                       : 'opacity-0 scale-90'

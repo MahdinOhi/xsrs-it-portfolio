@@ -20,22 +20,6 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-    // Close mobile menu if open
-    setIsMobileMenuOpen(false);
-  };
-
-  const handleNavClick = (e, sectionId) => {
-    e.preventDefault();
-    scrollToSection(sectionId);
-  };
 
   return (
     <>
@@ -58,34 +42,48 @@ export default function Navigation() {
             ? 'bg-black/40 border-[#ff6600]/50 hover:border-[#ff6600]/70 hover:bg-black/50' 
             : 'bg-black/20 border-[#ff6600]/30 hover:border-[#ff6600]/60 hover:bg-black/30'
         }`}>
-          <button 
-            onClick={(e) => handleNavClick(e, 'home')}
-            className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
+          <a 
+            href="/"
+            className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Home</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </button>
-          <button 
-            onClick={(e) => handleNavClick(e, 'about')}
-            className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
+          </a>
+          <a 
+            href="/#about"
+            className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">About Us</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </button>
-          <button 
-            onClick={(e) => handleNavClick(e, 'services')}
-            className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
+          </a>
+          <a 
+            href="/#services"
+            className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Services</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </button>
-          <button 
-            onClick={(e) => handleNavClick(e, 'contact')}
-            className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
+          </a>
+          <a 
+            href="/portfolio"
+            className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
+          >
+            <span className="relative z-10">Portfolio</span>
+            <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+          </a>
+          <a 
+            href="/projects"
+            className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
+          >
+            <span className="relative z-10">Projects</span>
+            <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+          </a>
+          <a 
+            href="/#contact"
+            className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Contact Us</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </button>
+          </a>
         </div>
         
         {/* Enhanced Mobile Menu Button */}
@@ -142,38 +140,60 @@ export default function Navigation() {
           
           <div className="flex flex-col items-center justify-center h-full space-y-6 px-4">
             {/* Menu Items with Staggered Animation */}
-            <button 
-              onClick={(e) => handleNavClick(e, 'home')}
-              className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
+            <a 
+              href="/"
+              className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
               style={{animationDelay: '0.1s'}}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               <span className="relative z-10">Home</span>
               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </button>
-            <button 
-              onClick={(e) => handleNavClick(e, 'about')}
-              className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
+            </a>
+            <a 
+              href="/#about"
+              className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
               style={{animationDelay: '0.2s'}}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               <span className="relative z-10">About Us</span>
               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </button>
-            <button 
-              onClick={(e) => handleNavClick(e, 'services')}
-              className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
-              style={{animationDelay: '0.3s'}}
-            >
-              <span className="relative z-10">Services</span>
-              <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </button>
-            <button 
-              onClick={(e) => handleNavClick(e, 'contact')}
-              className="text-white hover:text-[#ff6600] transition-all duration-300 font-[var(--font-press-start-2p)] text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
-              style={{animationDelay: '0.5s'}}
-            >
-              <span className="relative z-10">Contact Us</span>
-              <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </button>
+            </a>
+             <a 
+               href="/#services"
+               className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
+               style={{animationDelay: '0.3s'}}
+               onClick={() => setIsMobileMenuOpen(false)}
+             >
+               <span className="relative z-10">Services</span>
+               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+             </a>
+             <a 
+               href="/portfolio"
+               className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
+               style={{animationDelay: '0.4s'}}
+               onClick={() => setIsMobileMenuOpen(false)}
+             >
+               <span className="relative z-10">Portfolio</span>
+               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+             </a>
+             <a 
+               href="/projects"
+               className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
+               style={{animationDelay: '0.5s'}}
+               onClick={() => setIsMobileMenuOpen(false)}
+             >
+               <span className="relative z-10">Projects</span>
+               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+             </a>
+             <a 
+               href="/#contact"
+               className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
+               style={{animationDelay: '0.6s'}}
+               onClick={() => setIsMobileMenuOpen(false)}
+             >
+               <span className="relative z-10">Contact Us</span>
+               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+             </a>
             
             {/* Enhanced Close Button */}
             <button 

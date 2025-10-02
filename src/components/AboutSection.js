@@ -58,14 +58,14 @@ export default function AboutSection() {
               
               {/* Section Header */}
               <div className="space-y-4">
-                <div className="text-[#ff6600] font-[var(--font-press-start-2p)] text-sm uppercase tracking-wider">
+                <div className="text-[#ff6600] font-audiowide text-sm uppercase tracking-wider">
                   About XSRS-IT
                 </div>
-                <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white font-[var(--font-press-start-2p)] leading-tight">
+                <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white font-audiowide leading-tight">
                   Where Digital Dreams 
                   <span className="text-[#ff6600] block">Take Flight</span>
                 </h2>
-                <p className="text-lg text-gray-300 leading-relaxed font-[var(--font-press-start-2p)]">
+                <p className="text-lg text-gray-300 leading-relaxed font-audiowide">
                   Empowering startups and igniting innovation through cutting-edge technology solutions. 
                   We transform ideas into digital realities that drive business success.
                 </p>
@@ -74,18 +74,18 @@ export default function AboutSection() {
               {/* Mission & Vision */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)]">
+                  <h3 className="text-xl font-bold text-[#ff6600] font-audiowide">
                     Our Mission
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed font-[var(--font-press-start-2p)]">
+                  <p className="text-gray-300 text-sm leading-relaxed font-audiowide">
                     To democratize technology and make cutting-edge digital solutions accessible to businesses of all sizes.
                   </p>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)]">
+                  <h3 className="text-xl font-bold text-[#ff6600] font-audiowide">
                     Our Vision
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed font-[var(--font-press-start-2p)]">
+                  <p className="text-gray-300 text-sm leading-relaxed font-audiowide">
                     To be the leading force in digital transformation, creating a world where every business can thrive in the digital age.
                   </p>
                 </div>
@@ -94,34 +94,34 @@ export default function AboutSection() {
               {/* Key Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div className="text-center space-y-2">
-                  <div className="text-3xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)]">
+                  <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
                     50+
                   </div>
-                  <div className="text-sm text-gray-300 font-[var(--font-press-start-2p)]">
+                  <div className="text-sm text-gray-300 font-audiowide">
                     Projects Completed
                   </div>
                 </div>
                 <div className="text-center space-y-2">
-                  <div className="text-3xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)]">
+                  <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
                     25+
                   </div>
-                  <div className="text-sm text-gray-300 font-[var(--font-press-start-2p)]">
+                  <div className="text-sm text-gray-300 font-audiowide">
                     Happy Clients
                   </div>
                 </div>
                 <div className="text-center space-y-2">
-                  <div className="text-3xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)]">
+                  <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
                     3+
                   </div>
-                  <div className="text-sm text-gray-300 font-[var(--font-press-start-2p)]">
+                  <div className="text-sm text-gray-300 font-audiowide">
                     Years Experience
                   </div>
                 </div>
                 <div className="text-center space-y-2">
-                  <div className="text-3xl font-bold text-[#ff6600] font-[var(--font-press-start-2p)]">
+                  <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
                     24/7
                   </div>
-                  <div className="text-sm text-gray-300 font-[var(--font-press-start-2p)]">
+                  <div className="text-sm text-gray-300 font-audiowide">
                     Support
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export default function AboutSection() {
 
               {/* CTA Button */}
               <div className="pt-4">
-                <button className="px-8 py-4 bg-[#ff6600] text-black font-bold rounded-lg shadow-lg hover:shadow-[#ff6600]/50 transition-all duration-300 font-[var(--font-press-start-2p)] text-sm hover:scale-105 border-2 border-[#ff6600] hover:bg-transparent hover:text-[#ff6600] relative overflow-hidden group">
+                <button className="px-8 py-4 bg-[#ff6600] text-black font-bold rounded-lg shadow-lg hover:shadow-[#ff6600]/50 transition-all duration-300 font-audiowide text-sm hover:scale-105 border-2 border-[#ff6600] hover:bg-transparent hover:text-[#ff6600] relative overflow-hidden group">
                   <div className="absolute inset-0 bg-[#ff6600]/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <span className="relative z-10">Learn More</span>
