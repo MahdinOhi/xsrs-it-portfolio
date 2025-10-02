@@ -42,7 +42,7 @@ export default function HeroSection() {
             <div className="space-y-4 sm:space-y-6 lg:space-y-8">
               <div className="space-y-2">
                 <div 
-                  className={`text-base sm:text-lg md:text-xl lg:text-2xl text-[#ff6600] font-audiowide transition-all duration-1000 ease-out ${
+                  className={`text-base sm:text-lg md:text-xl lg:text-2xl text-[#00abf0] font-audiowide transition-all duration-1000 ease-out ${
                     isLoaded 
                       ? 'opacity-100 translate-y-0' 
                       : 'opacity-0 -translate-y-5'
@@ -57,7 +57,7 @@ export default function HeroSection() {
                       : ''
                   }`}
                 >
-                  <span className="text-[#ff6600]">XSRS-IT</span>
+                  <span className="text-[#00abf0]">XSRS-IT</span>
                 </h1>
               </div>
               
@@ -67,12 +67,12 @@ export default function HeroSection() {
               
               <div className="pt-4 relative">
                 {/* Animated Background Elements */}
-                <div className="absolute -top-4 -left-4 w-6 h-6 border border-[#ff6600]/30 rotate-45 animate-spin"></div>
-                <div className="absolute -bottom-2 -right-2 w-4 h-4 bg-[#ff6600]/20 rounded-full animate-pulse"></div>
+                <div className="absolute -top-4 -left-4 w-6 h-6 border border-[#00abf0]/30 rotate-45 animate-spin"></div>
+                <div className="absolute -bottom-2 -right-2 w-4 h-4 bg-[#00abf0]/20 rounded-full animate-pulse"></div>
                 
                 <button
                   onMouseEnter={handleCtaHover}
-                  className={`px-6 sm:px-8 py-3 sm:py-4 bg-[#ff6600] text-black font-bold rounded-lg shadow-lg hover:shadow-[#ff6600]/50 transition-all duration-300 font-audiowide text-xs sm:text-sm hover:scale-105 border-2 border-[#ff6600] hover:bg-transparent hover:text-[#ff6600] relative overflow-hidden group ${
+                  className={`px-6 sm:px-8 py-3 sm:py-4 bg-[#00abf0] text-black font-bold rounded-lg shadow-lg hover:shadow-[#00abf0]/50 transition-all duration-300 font-audiowide text-xs sm:text-sm hover:scale-105 border-2 border-[#00abf0] hover:bg-transparent hover:text-[#00abf0] relative overflow-hidden group ${
                     isLoaded 
                       ? 'opacity-100 scale-100' 
                       : 'opacity-0 scale-90'
@@ -80,7 +80,7 @@ export default function HeroSection() {
                   style={{ transitionDelay: '800ms' }}
                 >
                   {/* Button Glow Effect */}
-                  <div className="absolute inset-0 bg-[#ff6600]/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                  <div className="absolute inset-0 bg-[#00abf0]/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                   
                   {/* Button Shine Effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
@@ -89,8 +89,8 @@ export default function HeroSection() {
                 </button>
                 
                 {/* Floating Action Elements */}
-                <div className="absolute top-1/2 -right-8 w-3 h-3 bg-[#ff6600] rounded-full animate-bounce"></div>
-                <div className="absolute -top-2 left-1/2 w-2 h-2 border border-[#ff6600] rotate-45 animate-ping"></div>
+                <div className="absolute top-1/2 -right-8 w-3 h-3 bg-[#00abf0] rounded-full animate-bounce"></div>
+                <div className="absolute -top-2 left-1/2 w-2 h-2 border border-[#00abf0] rotate-45 animate-ping"></div>
               </div>
             </div>
           </div>
@@ -108,41 +108,41 @@ export default function HeroSection() {
                 
                 {/* Product Slider Container */}
                 <div className="relative w-full max-w-sm sm:max-w-md mx-auto">
-                  <div className="relative overflow-hidden rounded-2xl bg-black/30 backdrop-blur-sm border border-[#ff6600]/30 p-4 sm:p-6 lg:p-8">
+                  <div className="relative overflow-hidden rounded-2xl bg-black/30 backdrop-blur-sm border border-[#00abf0]/30 p-4 sm:p-6 lg:p-8">
                     
                     {/* Retro Terminal Display */}
-                    <div className="bg-black rounded-lg p-4 border border-[#ff6600]/50 relative overflow-hidden">
+                    <div className="bg-black rounded-lg p-4 border border-[#00abf0]/50 relative overflow-hidden">
                       <div className="flex items-center space-x-2 mb-3">
                         <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
                         <div className="w-3 h-3 bg-yellow-500 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
                         <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
                       </div>
-                      <div className="text-[#ff6600] font-mono text-xs sm:text-sm">
+                      <div className="text-[#00abf0] font-mono text-xs sm:text-sm">
                         <div className="animate-pulse">$ XSRS-IT v2.0.1</div>
                         <div className="text-white mt-2 flex items-center">
                           <span>Loading digital solutions</span>
                           <span className="animate-pulse ml-1">...</span>
                         </div>
-                        <div className="text-[#ff6600] mt-1 animate-fade-in" style={{animationDelay: '2s'}}>✓ Web Development</div>
-                        <div className="text-[#ff6600] mt-1 animate-fade-in" style={{animationDelay: '3s'}}>✓ Mobile Apps</div>
-                        <div className="text-[#ff6600] mt-1 animate-fade-in" style={{animationDelay: '4s'}}>✓ Cloud Solutions</div>
+                        <div className="text-[#00abf0] mt-1 animate-fade-in" style={{animationDelay: '2s'}}>✓ Web Development</div>
+                        <div className="text-[#00abf0] mt-1 animate-fade-in" style={{animationDelay: '3s'}}>✓ Mobile Apps</div>
+                        <div className="text-[#00abf0] mt-1 animate-fade-in" style={{animationDelay: '4s'}}>✓ Cloud Solutions</div>
                         <div className="text-white mt-2 animate-fade-in" style={{animationDelay: '5s'}}>Ready to innovate!</div>
                       </div>
                       
                       {/* Terminal Cursor */}
-                      <div className="absolute bottom-4 right-4 w-2 h-4 bg-[#ff6600] animate-pulse"></div>
+                      <div className="absolute bottom-4 right-4 w-2 h-4 bg-[#00abf0] animate-pulse"></div>
                     </div>
                     
                     {/* Enhanced Floating Elements */}
-                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#ff6600] rounded-full animate-bounce"></div>
-                    <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-[#ff6600]/50 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/2 -right-6 w-4 h-4 border border-[#ff6600] rotate-45 animate-spin"></div>
-                    <div className="absolute -top-2 left-1/2 w-3 h-3 bg-[#ff6600] rounded-full animate-ping"></div>
-                    <div className="absolute bottom-1/4 -left-2 w-5 h-5 border-2 border-[#ff6600] rounded-full animate-pulse"></div>
+                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#00abf0] rounded-full animate-bounce"></div>
+                    <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-[#00abf0]/50 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/2 -right-6 w-4 h-4 border border-[#00abf0] rotate-45 animate-spin"></div>
+                    <div className="absolute -top-2 left-1/2 w-3 h-3 bg-[#00abf0] rounded-full animate-ping"></div>
+                    <div className="absolute bottom-1/4 -left-2 w-5 h-5 border-2 border-[#00abf0] rounded-full animate-pulse"></div>
                     
                     {/* Animated Border Glow */}
-                    <div className="absolute inset-0 rounded-2xl border-2 border-[#ff6600]/30 animate-pulse"></div>
-                    <div className="absolute inset-0 rounded-2xl border border-[#ff6600]/60 animate-ping"></div>
+                    <div className="absolute inset-0 rounded-2xl border-2 border-[#00abf0]/30 animate-pulse"></div>
+                    <div className="absolute inset-0 rounded-2xl border border-[#00abf0]/60 animate-ping"></div>
                   </div>
                 </div>
               </div>
@@ -153,12 +153,12 @@ export default function HeroSection() {
 
       {/* Additional Floating Elements Around Content */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#ff6600] rounded-full animate-float"></div>
-        <div className="absolute top-3/4 right-1/4 w-3 h-3 border border-[#ff6600] rotate-45 animate-spin"></div>
-        <div className="absolute top-1/2 left-1/6 w-1 h-1 bg-[#ff6600] rounded-full animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-4 h-4 border-2 border-[#ff6600] rounded-full animate-ping"></div>
-        <div className="absolute top-1/6 right-1/6 w-1.5 h-1.5 bg-[#ff6600] rounded-full animate-bounce"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-2.5 h-2.5 border border-[#ff6600] rotate-12 animate-pulse"></div>
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#00abf0] rounded-full animate-float"></div>
+        <div className="absolute top-3/4 right-1/4 w-3 h-3 border border-[#00abf0] rotate-45 animate-spin"></div>
+        <div className="absolute top-1/2 left-1/6 w-1 h-1 bg-[#00abf0] rounded-full animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-4 h-4 border-2 border-[#00abf0] rounded-full animate-ping"></div>
+        <div className="absolute top-1/6 right-1/6 w-1.5 h-1.5 bg-[#00abf0] rounded-full animate-bounce"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-2.5 h-2.5 border border-[#00abf0] rotate-12 animate-pulse"></div>
       </div>
     </section>
   );

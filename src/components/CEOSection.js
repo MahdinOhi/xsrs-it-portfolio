@@ -86,22 +86,22 @@ export default function CEOSection() {
       <section className="relative py-16 lg:py-24 bg-[#0a0a0a] overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#ff6600] rounded-full animate-float"></div>
-          <div className="absolute top-3/4 right-1/4 w-3 h-3 border border-[#ff6600] rotate-45 animate-spin"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-[#ff6600] rounded-full animate-pulse"></div>
-          <div className="absolute top-1/2 right-1/3 w-4 h-4 border-2 border-[#ff6600] rounded-full animate-ping"></div>
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#00abf0] rounded-full animate-float"></div>
+          <div className="absolute top-3/4 right-1/4 w-3 h-3 border border-[#00abf0] rotate-45 animate-spin"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-[#00abf0] rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 right-1/3 w-4 h-4 border-2 border-[#00abf0] rounded-full animate-ping"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}
           <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <div className="text-[#ff6600] font-audiowide text-sm uppercase tracking-wider mb-4">
+            <div className="text-[#00abf0] font-audiowide text-sm uppercase tracking-wider mb-4">
               Leadership Team
             </div>
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white font-audiowide leading-tight mb-6">
               Meet Our
-              <span className="text-[#ff6600] block">Executive Team</span>
+              <span className="text-[#00abf0] block">Executive Team</span>
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed font-audiowide max-w-3xl mx-auto">
               Our leadership team brings together decades of experience in technology, 
@@ -114,7 +114,7 @@ export default function CEOSection() {
             {ceoMembers.map((member, index) => (
               <div
                 key={member.id}
-                className={`group relative bg-black/30 backdrop-blur-sm rounded-2xl border border-[#ff6600]/30 overflow-hidden hover:border-[#ff6600]/60 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#ff6600]/20 ${
+                className={`group relative bg-black/30 backdrop-blur-sm rounded-2xl border border-[#00abf0]/30 overflow-hidden hover:border-[#00abf0]/60 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#00abf0]/20 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{transitionDelay: `${index * 0.2}s`}}
@@ -124,20 +124,20 @@ export default function CEOSection() {
                 <div className="relative h-64 bg-gradient-to-br from-[#ff6600]/20 to-transparent overflow-hidden">
                   <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                     <div className="text-center space-y-3">
-                      <div className="w-20 h-20 bg-[#ff6600] rounded-full flex items-center justify-center mx-auto animate-pulse">
+                      <div className="w-20 h-20 bg-[#00abf0] rounded-full flex items-center justify-center mx-auto animate-pulse">
                         <span className="text-3xl font-bold text-black font-audiowide">
                           {member.name.charAt(0)}
                         </span>
                       </div>
-                      <div className="text-[#ff6600] font-audiowide text-sm">
+                      <div className="text-[#00abf0] font-audiowide text-sm">
                         {member.name}
                       </div>
                     </div>
                   </div>
                   
                   {/* Floating Elements */}
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#ff6600] rounded-full animate-bounce"></div>
-                  <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-[#ff6600]/50 rounded-full animate-pulse"></div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#00abf0] rounded-full animate-bounce"></div>
+                  <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-[#00abf0]/50 rounded-full animate-pulse"></div>
                 </div>
 
                 {/* Member Content */}
@@ -145,10 +145,10 @@ export default function CEOSection() {
                   
                   {/* Name and Position */}
                   <div className="space-y-2">
-                    <h3 className="text-xl font-bold text-white font-audiowide group-hover:text-[#ff6600] transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-white font-audiowide group-hover:text-[#00abf0] transition-colors duration-300">
                       {member.name}
                     </h3>
-                    <p className="text-[#ff6600] text-sm font-audiowide">
+                    <p className="text-[#00abf0] text-sm font-audiowide">
                       {member.position}
                     </p>
                   </div>
@@ -160,14 +160,14 @@ export default function CEOSection() {
 
                   {/* Expertise Tags */}
                   <div className="space-y-2">
-                    <div className="text-[#ff6600] text-xs font-audiowide uppercase tracking-wider">
+                    <div className="text-[#00abf0] text-xs font-audiowide uppercase tracking-wider">
                       Expertise
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {member.expertise.map((skill, skillIndex) => (
                         <span
                           key={skillIndex}
-                          className="px-2 py-1 bg-[#ff6600]/10 text-[#ff6600] text-xs rounded font-audiowide border border-[#ff6600]/30"
+                          className="px-2 py-1 bg-[#00abf0]/10 text-[#00abf0] text-xs rounded font-audiowide border border-[#00abf0]/30"
                         >
                           {skill}
                         </span>
@@ -176,10 +176,10 @@ export default function CEOSection() {
                   </div>
 
                   {/* Social Links */}
-                  <div className="flex justify-center space-x-4 pt-4 border-t border-[#ff6600]/20">
+                  <div className="flex justify-center space-x-4 pt-4 border-t border-[#00abf0]/20">
                     <a
                       href={member.linkedin}
-                      className="w-8 h-8 bg-black/30 border border-[#ff6600]/30 rounded-lg flex items-center justify-center text-[#ff6600] hover:bg-[#ff6600] hover:text-black transition-all duration-300 hover:scale-110"
+                      className="w-8 h-8 bg-black/30 border border-[#00abf0]/30 rounded-lg flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-black transition-all duration-300 hover:scale-110"
                       aria-label={`${member.name} LinkedIn`}
                     >
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -188,7 +188,7 @@ export default function CEOSection() {
                     </a>
                     <a
                       href={member.twitter}
-                      className="w-8 h-8 bg-black/30 border border-[#ff6600]/30 rounded-lg flex items-center justify-center text-[#ff6600] hover:bg-[#ff6600] hover:text-black transition-all duration-300 hover:scale-110"
+                      className="w-8 h-8 bg-black/30 border border-[#00abf0]/30 rounded-lg flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-black transition-all duration-300 hover:scale-110"
                       aria-label={`${member.name} Twitter`}
                     >
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -199,7 +199,7 @@ export default function CEOSection() {
                 </div>
 
                 {/* Hover Glow Effect */}
-                <div className="absolute inset-0 rounded-2xl bg-[#ff6600]/5 scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+                <div className="absolute inset-0 rounded-2xl bg-[#00abf0]/5 scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
               </div>
             ))}
           </div>
@@ -207,7 +207,7 @@ export default function CEOSection() {
           {/* Team Stats */}
           <div className={`mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
+              <div className="text-3xl font-bold text-[#00abf0] font-audiowide">
                 40+
               </div>
               <div className="text-sm text-gray-300 font-audiowide">
@@ -215,7 +215,7 @@ export default function CEOSection() {
               </div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
+              <div className="text-3xl font-bold text-[#00abf0] font-audiowide">
                 4
               </div>
               <div className="text-sm text-gray-300 font-audiowide">
@@ -223,7 +223,7 @@ export default function CEOSection() {
               </div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
+              <div className="text-3xl font-bold text-[#00abf0] font-audiowide">
                 15+
               </div>
               <div className="text-sm text-gray-300 font-audiowide">
@@ -231,7 +231,7 @@ export default function CEOSection() {
               </div>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
+              <div className="text-3xl font-bold text-[#00abf0] font-audiowide">
                 100%
               </div>
               <div className="text-sm text-gray-300 font-audiowide">

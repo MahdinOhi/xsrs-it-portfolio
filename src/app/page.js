@@ -60,8 +60,8 @@ export default function Home() {
         }
         
         @keyframes glow {
-          0%, 100% { box-shadow: 0 0 5px rgba(255, 102, 0, 0.3); }
-          50% { box-shadow: 0 0 20px rgba(255, 102, 0, 0.6), 0 0 30px rgba(255, 102, 0, 0.4); }
+          0%, 100% { box-shadow: 0 0 5px rgba(0, 171, 240, 0.3); }
+          50% { box-shadow: 0 0 20px rgba(0, 171, 240, 0.6), 0 0 30px rgba(240, 90, 40, 0.4); }
         }
         
         .animate-fade-in {

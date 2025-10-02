@@ -72,14 +72,14 @@ export default function Footer() {
         }
       `}</style>
       
-      <footer className="relative bg-[#0a0a0a] border-t border-[#ff6600]/20 overflow-hidden">
+      <footer className="relative bg-[#0a0a0a] border-t border-[#00abf0]/20 overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-2 h-2 bg-[#ff6600] rounded-full animate-float"></div>
-          <div className="absolute top-1/4 right-1/4 w-3 h-3 border border-[#ff6600] rotate-45 animate-spin"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-[#ff6600] rounded-full animate-pulse"></div>
-          <div className="absolute top-1/2 right-1/3 w-4 h-4 border-2 border-[#ff6600] rounded-full animate-ping"></div>
-          <div className="absolute bottom-0 left-1/2 w-2 h-2 bg-[#ff6600] rounded-full animate-bounce"></div>
+          <div className="absolute top-0 left-1/4 w-2 h-2 bg-[#00abf0] rounded-full animate-float"></div>
+          <div className="absolute top-1/4 right-1/4 w-3 h-3 border border-[#00abf0] rotate-45 animate-spin"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-[#00abf0] rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 right-1/3 w-4 h-4 border-2 border-[#00abf0] rounded-full animate-ping"></div>
+          <div className="absolute bottom-0 left-1/2 w-2 h-2 bg-[#00abf0] rounded-full animate-bounce"></div>
         </div>
 
         {/* Main Footer Content */}
@@ -89,7 +89,7 @@ export default function Footer() {
             {/* Company Info */}
             <div className={`space-y-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="space-y-3">
-                <h3 className="text-2xl font-bold text-[#ff6600] font-audiowide">
+                <h3 className="text-2xl font-bold text-[#00abf0] font-audiowide">
                   XSRS-IT
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed font-audiowide">
@@ -99,16 +99,16 @@ export default function Footer() {
               
               {/* Contact Info */}
               <div className="space-y-2">
-                <div className="flex items-center space-x-3 text-gray-300 hover:text-[#ff6600] transition-colors duration-300 group">
-                  <div className="w-2 h-2 bg-[#ff6600] rounded-full animate-pulse"></div>
+                <div className="flex items-center space-x-3 text-gray-300 hover:text-[#00abf0] transition-colors duration-300 group">
+                  <div className="w-2 h-2 bg-[#00abf0] rounded-full animate-pulse"></div>
                   <span className="text-sm font-audiowide">hello@xsrs-it.com</span>
                 </div>
-                <div className="flex items-center space-x-3 text-gray-300 hover:text-[#ff6600] transition-colors duration-300 group">
-                  <div className="w-2 h-2 bg-[#ff6600] rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                <div className="flex items-center space-x-3 text-gray-300 hover:text-[#00abf0] transition-colors duration-300 group">
+                  <div className="w-2 h-2 bg-[#00abf0] rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
                   <span className="text-sm font-audiowide">+1 (555) 123-4567</span>
                 </div>
-                <div className="flex items-center space-x-3 text-gray-300 hover:text-[#ff6600] transition-colors duration-300 group">
-                  <div className="w-2 h-2 bg-[#ff6600] rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                <div className="flex items-center space-x-3 text-gray-300 hover:text-[#00abf0] transition-colors duration-300 group">
+                  <div className="w-2 h-2 bg-[#00abf0] rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
                   <span className="text-sm font-audiowide">San Francisco, CA</span>
                 </div>
               </div>
@@ -132,21 +132,21 @@ export default function Footer() {
                     <a
                       key={link.name}
                       href={link.href}
-                      className="block text-gray-300 hover:text-[#ff6600] transition-all duration-300 font-audiowide text-sm relative group hover:translate-x-2 w-full text-left"
+                      className="block text-gray-300 hover:text-[#00abf0] transition-all duration-300 font-audiowide text-sm relative group hover:translate-x-2 w-full text-left"
                       style={{transitionDelay: `${index * 0.1}s`}}
                     >
                       <span className="relative z-10">{link.name}</span>
-                      <div className="absolute left-0 top-1/2 w-0 h-0.5 bg-[#ff6600] group-hover:w-full transition-all duration-300 -translate-y-1/2"></div>
+                      <div className="absolute left-0 top-1/2 w-0 h-0.5 bg-[#00abf0] group-hover:w-full transition-all duration-300 -translate-y-1/2"></div>
                     </a>
                   ) : (
                     <button
                       key={link.name}
                       onClick={(e) => handleNavClick(e, link.sectionId)}
-                      className="block text-gray-300 hover:text-[#ff6600] transition-all duration-300 font-audiowide text-sm relative group hover:translate-x-2 w-full text-left"
+                      className="block text-gray-300 hover:text-[#00abf0] transition-all duration-300 font-audiowide text-sm relative group hover:translate-x-2 w-full text-left"
                       style={{transitionDelay: `${index * 0.1}s`}}
                     >
                       <span className="relative z-10">{link.name}</span>
-                      <div className="absolute left-0 top-1/2 w-0 h-0.5 bg-[#ff6600] group-hover:w-full transition-all duration-300 -translate-y-1/2"></div>
+                      <div className="absolute left-0 top-1/2 w-0 h-0.5 bg-[#00abf0] group-hover:w-full transition-all duration-300 -translate-y-1/2"></div>
                     </button>
                   )
                 ))}
@@ -168,10 +168,10 @@ export default function Footer() {
                 ].map((service, index) => (
                   <div
                     key={service}
-                    className="flex items-center space-x-3 text-gray-300 hover:text-[#ff6600] transition-all duration-300 group cursor-pointer"
+                    className="flex items-center space-x-3 text-gray-300 hover:text-[#00abf0] transition-all duration-300 group cursor-pointer"
                     style={{transitionDelay: `${index * 0.1}s`}}
                   >
-                    <div className="w-1.5 h-1.5 bg-[#ff6600] rounded-full animate-pulse"></div>
+                    <div className="w-1.5 h-1.5 bg-[#00abf0] rounded-full animate-pulse"></div>
                     <span className="text-sm font-audiowide group-hover:translate-x-1 transition-transform duration-300">
                       {service}
                     </span>
@@ -197,12 +197,12 @@ export default function Footer() {
                   <a
                     key={social.name}
                     href={social.href}
-                    className="w-10 h-10 bg-black/30 border border-[#ff6600]/30 rounded-lg flex items-center justify-center text-[#ff6600] hover:bg-[#ff6600] hover:text-black transition-all duration-300 font-audiowide text-xs hover:scale-110 hover:shadow-lg hover:shadow-[#ff6600]/30 relative group"
+                    className="w-10 h-10 bg-black/30 border border-[#00abf0]/30 rounded-lg flex items-center justify-center text-[#00abf0] hover:bg-[#00abf0] hover:text-black transition-all duration-300 font-audiowide text-xs hover:scale-110 hover:shadow-lg hover:shadow-[#00abf0]/30 relative group"
                     style={{transitionDelay: `${index * 0.1}s`}}
                     aria-label={social.name}
                   >
                     <span className="relative z-10">{social.icon}</span>
-                    <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    <div className="absolute inset-0 bg-[#00abf0]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                   </a>
                 ))}
               </div>
@@ -216,9 +216,9 @@ export default function Footer() {
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="flex-1 px-3 py-2 bg-black/30 border border-[#ff6600]/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#ff6600] focus:ring-1 focus:ring-[#ff6600]/50 transition-all duration-300 font-audiowide text-xs"
+                    className="flex-1 px-3 py-2 bg-black/30 border border-[#00abf0]/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#00abf0] focus:ring-1 focus:ring-[#ff6600]/50 transition-all duration-300 font-audiowide text-xs"
                   />
-                  <button className="px-4 py-2 bg-[#ff6600] text-black rounded-lg hover:bg-[#ff6600]/80 transition-all duration-300 font-audiowide text-xs hover:scale-105 relative overflow-hidden group">
+                  <button className="px-4 py-2 bg-[#00abf0] text-black rounded-lg hover:bg-[#00abf0]/80 transition-all duration-300 font-audiowide text-xs hover:scale-105 relative overflow-hidden group">
                     <span className="relative z-10">Subscribe</span>
                     <div className="absolute inset-0 bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                   </button>
@@ -228,7 +228,7 @@ export default function Footer() {
           </div>
 
           {/* Bottom Section */}
-          <div className={`mt-12 pt-8 border-t border-[#ff6600]/20 transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className={`mt-12 pt-8 border-t border-[#00abf0]/20 transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               
               {/* Copyright */}
@@ -239,11 +239,11 @@ export default function Footer() {
               {/* Back to Top Button */}
               <button
                 onClick={scrollToTop}
-                className="flex items-center space-x-2 text-[#ff6600] hover:text-white transition-all duration-300 font-audiowide text-sm group"
+                className="flex items-center space-x-2 text-[#00abf0] hover:text-white transition-all duration-300 font-audiowide text-sm group"
               >
                 <span>Back to Top</span>
-                <div className="w-6 h-6 border border-[#ff6600] rotate-45 group-hover:bg-[#ff6600] group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
-                  <div className="w-2 h-2 bg-[#ff6600] rotate-45 group-hover:bg-black transition-colors duration-300"></div>
+                <div className="w-6 h-6 border border-[#00abf0] rotate-45 group-hover:bg-[#00abf0] group-hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                  <div className="w-2 h-2 bg-[#00abf0] rotate-45 group-hover:bg-black transition-colors duration-300"></div>
                 </div>
               </button>
 
@@ -253,7 +253,7 @@ export default function Footer() {
                   <a
                     key={link}
                     href="#"
-                    className="text-gray-400 hover:text-[#ff6600] transition-colors duration-300 font-audiowide text-xs hover:underline"
+                    className="text-gray-400 hover:text-[#00abf0] transition-colors duration-300 font-audiowide text-xs hover:underline"
                     style={{transitionDelay: `${index * 0.1}s`}}
                   >
                     {link}

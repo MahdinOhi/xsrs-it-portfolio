@@ -13,7 +13,10 @@ module.exports = {
         'press-start': ['var(--font-press-start-2p)', 'monospace'],
       },
       colors: {
-        'orange': '#ff6600',
+        'accent-blue': '#00abf0',
+        'accent-orange': '#f05a28',
+        'primary': '#00abf0',
+        'secondary': '#f05a28',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out forwards',
@@ -31,8 +34,8 @@ module.exports = {
           '50%': { transform: 'translateY(-10px)' },
         },
         glow: {
-          '0%, 100%': { boxShadow: '0 0 5px rgba(255, 102, 0, 0.3)' },
-          '50%': { boxShadow: '0 0 20px rgba(255, 102, 0, 0.6), 0 0 30px rgba(255, 102, 0, 0.4)' },
+          '0%, 100%': { boxShadow: '0 0 5px rgba(0, 171, 240, 0.3)' },
+          '50%': { boxShadow: '0 0 20px rgba(0, 171, 240, 0.6), 0 0 30px rgba(240, 90, 40, 0.4)' },
         },
       },
     },

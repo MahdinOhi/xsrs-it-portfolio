@@ -57,8 +57,8 @@ export default function CustomCursor() {
         }
         
         @keyframes glow {
-          0%, 100% { box-shadow: 0 0 10px rgba(255, 102, 0, 0.5); }
-          50% { box-shadow: 0 0 20px rgba(255, 102, 0, 0.8), 0 0 30px rgba(255, 102, 0, 0.6); }
+          0%, 100% { box-shadow: 0 0 10px rgba(0, 171, 240, 0.5); }
+          50% { box-shadow: 0 0 20px rgba(0, 171, 240, 0.8), 0 0 30px rgba(240, 90, 40, 0.6); }
         }
         
         @keyframes ripple {
@@ -91,14 +91,14 @@ export default function CustomCursor() {
         }}
       >
         <div
-          className={`w-8 h-8 rounded-full border-2 border-[#ff6600] bg-[#ff6600]/30 backdrop-blur-sm transition-all duration-300 ${
+          className={`w-8 h-8 rounded-full border-2 border-[#00abf0] bg-[#00abf0]/30 backdrop-blur-sm transition-all duration-300 ${
             isHovering 
-              ? 'scale-150 bg-[#ff6600]/50 border-[#ff6600] cursor-pulse cursor-glow' 
+              ? 'scale-150 bg-[#00abf0]/50 border-[#00abf0] cursor-pulse cursor-glow' 
               : 'scale-100'
           }`}
         >
           {/* Inner glow effect */}
-          <div className="absolute inset-0 rounded-full bg-[#ff6600]/40 animate-ping"></div>
+          <div className="absolute inset-0 rounded-full bg-[#00abf0]/40 animate-ping"></div>
         </div>
       </div>
 
@@ -114,9 +114,9 @@ export default function CustomCursor() {
         }}
       >
         <div
-          className={`w-16 h-16 rounded-full border-2 border-[#ff6600]/50 transition-all duration-500 ${
+          className={`w-16 h-16 rounded-full border-2 border-[#00abf0]/50 transition-all duration-500 ${
             isHovering 
-              ? 'scale-200 border-[#ff6600]/80 animate-pulse' 
+              ? 'scale-200 border-[#00abf0]/80 animate-pulse' 
               : 'scale-100'
           }`}
         >
@@ -138,7 +138,7 @@ export default function CustomCursor() {
       >
         {/* Particle 1 */}
         <div 
-          className={`absolute w-1 h-1 bg-[#ff6600] rounded-full transition-all duration-1000 ${
+          className={`absolute w-1 h-1 bg-[#00abf0] rounded-full transition-all duration-1000 ${
             isHovering ? 'animate-ping' : 'animate-pulse'
           }`}
           style={{
@@ -150,7 +150,7 @@ export default function CustomCursor() {
         
         {/* Particle 2 */}
         <div 
-          className={`absolute w-1.5 h-1.5 bg-[#ff6600]/60 rounded-full transition-all duration-1200 ${
+          className={`absolute w-1.5 h-1.5 bg-[#00abf0]/60 rounded-full transition-all duration-1200 ${
             isHovering ? 'animate-ping' : 'animate-pulse'
           }`}
           style={{
@@ -162,7 +162,7 @@ export default function CustomCursor() {
         
         {/* Particle 3 */}
         <div 
-          className={`absolute w-0.5 h-0.5 bg-[#ff6600]/40 rounded-full transition-all duration-800 ${
+          className={`absolute w-0.5 h-0.5 bg-[#00abf0]/40 rounded-full transition-all duration-800 ${
             isHovering ? 'animate-ping' : 'animate-pulse'
           }`}
           style={{
@@ -183,7 +183,7 @@ export default function CustomCursor() {
             transform: 'translate(-50%, -50%)',
           }}
         >
-          <div className="w-8 h-8 rounded-full border-2 border-[#ff6600] cursor-ripple"></div>
+          <div className="w-8 h-8 rounded-full border-2 border-[#00abf0] cursor-ripple"></div>
         </div>
       )}
     </>

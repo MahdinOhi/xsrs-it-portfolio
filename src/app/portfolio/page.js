@@ -176,8 +176,8 @@ export default function Portfolio() {
         }
         
         @keyframes glow {
-          0%, 100% { box-shadow: 0 0 5px rgba(255, 102, 0, 0.3); }
-          50% { box-shadow: 0 0 20px rgba(255, 102, 0, 0.6), 0 0 30px rgba(255, 102, 0, 0.4); }
+          0%, 100% { box-shadow: 0 0 5px rgba(0, 171, 240, 0.3); }
+          50% { box-shadow: 0 0 20px rgba(0, 171, 240, 0.6), 0 0 30px rgba(240, 90, 40, 0.4); }
         }
         
         .animate-fade-in {
@@ -207,12 +207,12 @@ export default function Portfolio() {
         <section className="relative z-10 pt-20 pb-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
             <div className={`space-y-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="text-[#ff6600] font-audiowide text-sm uppercase tracking-wider">
+              <div className="text-[#00abf0] font-audiowide text-sm uppercase tracking-wider">
                 Our Portfolio
               </div>
               <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold text-white font-audiowide leading-tight">
                 Digital Solutions That
-                <span className="text-[#ff6600] block">Drive Success</span>
+                <span className="text-[#00abf0] block">Drive Success</span>
               </h1>
               <p className="text-lg text-gray-300 leading-relaxed font-audiowide max-w-3xl mx-auto">
                 Explore our portfolio of innovative projects that showcase our expertise in web development, 
@@ -235,8 +235,8 @@ export default function Portfolio() {
                   onClick={() => setSelectedCategory(category)}
                   className={`px-6 py-3 rounded-full font-audiowide text-sm transition-all duration-300 ${
                     selectedCategory === category
-                      ? 'bg-[#ff6600] text-black hover:bg-[#ff6600]/80'
-                      : 'bg-black/30 text-white hover:bg-[#ff6600] hover:text-black border border-[#ff6600]/30'
+                      ? 'bg-[#00abf0] text-black hover:bg-[#00abf0]/80'
+                      : 'bg-black/30 text-white hover:bg-[#00abf0] hover:text-black border border-[#00abf0]/30'
                   }`}
                   style={{transitionDelay: `${index * 0.1}s`}}
                 >
@@ -254,7 +254,7 @@ export default function Portfolio() {
             {/* Projects Stats */}
             <div className={`mb-12 grid grid-cols-2 md:grid-cols-4 gap-6 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="text-center space-y-2">
-                <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
+                <div className="text-3xl font-bold text-[#00abf0] font-audiowide">
                   {filteredProjects.length}
                 </div>
                 <div className="text-sm text-gray-300 font-audiowide">
@@ -262,7 +262,7 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
+                <div className="text-3xl font-bold text-[#00abf0] font-audiowide">
                   {filteredProjects.filter(p => p.status === 'Completed').length}
                 </div>
                 <div className="text-sm text-gray-300 font-audiowide">
@@ -270,7 +270,7 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
+                <div className="text-3xl font-bold text-[#00abf0] font-audiowide">
                   6+
                 </div>
                 <div className="text-sm text-gray-300 font-audiowide">
@@ -278,7 +278,7 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-3xl font-bold text-[#ff6600] font-audiowide">
+                <div className="text-3xl font-bold text-[#00abf0] font-audiowide">
                   100%
                 </div>
                 <div className="text-sm text-gray-300 font-audiowide">
@@ -291,7 +291,7 @@ export default function Portfolio() {
               {filteredProjects.map((project, index) => (
                 <div
                   key={project.id}
-                  className={`group relative bg-black/30 backdrop-blur-sm rounded-2xl border border-[#ff6600]/30 overflow-hidden hover:border-[#ff6600]/60 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#ff6600]/20 ${
+                  className={`group relative bg-black/30 backdrop-blur-sm rounded-2xl border border-[#00abf0]/30 overflow-hidden hover:border-[#00abf0]/60 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-[#00abf0]/20 ${
                     isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                   }`}
                   style={{transitionDelay: `${index * 0.1}s`}}
@@ -300,10 +300,10 @@ export default function Portfolio() {
                   <div className="relative h-56 bg-gradient-to-br from-[#ff6600]/20 to-transparent overflow-hidden">
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                       <div className="text-center space-y-3">
-                        <div className="w-20 h-20 bg-[#ff6600] rounded-full flex items-center justify-center mx-auto animate-pulse">
+                        <div className="w-20 h-20 bg-[#00abf0] rounded-full flex items-center justify-center mx-auto animate-pulse">
                           <span className="text-3xl">🚀</span>
                         </div>
-                        <div className="text-[#ff6600] font-audiowide text-sm">
+                        <div className="text-[#00abf0] font-audiowide text-sm">
                           {project.category}
                         </div>
                         <div className="text-white font-audiowide text-xs">
@@ -325,7 +325,7 @@ export default function Portfolio() {
 
                     {/* Duration Badge */}
                     <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 bg-[#ff6600]/20 text-[#ff6600] text-xs rounded-full font-audiowide border border-[#ff6600]/30">
+                      <span className="px-3 py-1 bg-[#00abf0]/20 text-[#00abf0] text-xs rounded-full font-audiowide border border-[#00abf0]/30">
                         {project.duration}
                       </span>
                     </div>
@@ -334,7 +334,7 @@ export default function Portfolio() {
                   {/* Project Content */}
                   <div className="p-6 space-y-4">
                     <div className="space-y-2">
-                      <h3 className="text-xl font-bold text-white font-audiowide group-hover:text-[#ff6600] transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-white font-audiowide group-hover:text-[#00abf0] transition-colors duration-300">
                         {project.title}
                       </h3>
                       <p className="text-gray-300 text-sm leading-relaxed font-audiowide">
@@ -344,14 +344,14 @@ export default function Portfolio() {
 
                     {/* Key Features */}
                     <div className="space-y-2">
-                      <div className="text-[#ff6600] text-xs font-audiowide uppercase tracking-wider">
+                      <div className="text-[#00abf0] text-xs font-audiowide uppercase tracking-wider">
                         Key Features
                       </div>
                       <div className="flex flex-wrap gap-1">
                         {project.features.slice(0, 3).map((feature, featureIndex) => (
                           <span
                             key={featureIndex}
-                            className="px-2 py-1 bg-[#ff6600]/10 text-[#ff6600] text-xs rounded font-audiowide border border-[#ff6600]/30"
+                            className="px-2 py-1 bg-[#00abf0]/10 text-[#00abf0] text-xs rounded font-audiowide border border-[#00abf0]/30"
                           >
                             {feature}
                           </span>
@@ -366,14 +366,14 @@ export default function Portfolio() {
 
                     {/* Technologies */}
                     <div className="space-y-2">
-                      <div className="text-[#ff6600] text-xs font-audiowide uppercase tracking-wider">
+                      <div className="text-[#00abf0] text-xs font-audiowide uppercase tracking-wider">
                         Technologies
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.slice(0, 4).map((tech, techIndex) => (
                           <span
                             key={techIndex}
-                            className="px-2 py-1 bg-[#ff6600]/10 text-[#ff6600] text-xs rounded font-audiowide border border-[#ff6600]/30"
+                            className="px-2 py-1 bg-[#00abf0]/10 text-[#00abf0] text-xs rounded font-audiowide border border-[#00abf0]/30"
                           >
                             {tech}
                           </span>
@@ -388,7 +388,7 @@ export default function Portfolio() {
 
                     {/* Results Preview */}
                     <div className="space-y-2">
-                      <div className="text-[#ff6600] text-xs font-audiowide uppercase tracking-wider">
+                      <div className="text-[#00abf0] text-xs font-audiowide uppercase tracking-wider">
                         Key Results
                       </div>
                       <div className="text-gray-300 text-xs font-audiowide">
@@ -397,17 +397,17 @@ export default function Portfolio() {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="flex justify-between items-center pt-4 border-t border-[#ff6600]/20">
+                    <div className="flex justify-between items-center pt-4 border-t border-[#00abf0]/20">
                       <div className="flex space-x-2">
                         <a
                           href={project.liveUrl}
-                          className="px-3 py-1 bg-[#ff6600] text-black text-xs rounded font-audiowide hover:bg-[#ff6600]/80 transition-colors duration-300"
+                          className="px-3 py-1 bg-[#00abf0] text-black text-xs rounded font-audiowide hover:bg-[#00abf0]/80 transition-colors duration-300"
                         >
                           Live Demo
                         </a>
                         <a
                           href={project.githubUrl}
-                          className="px-3 py-1 bg-transparent text-[#ff6600] text-xs rounded border border-[#ff6600] font-audiowide hover:bg-[#ff6600] hover:text-black transition-colors duration-300"
+                          className="px-3 py-1 bg-transparent text-[#00abf0] text-xs rounded border border-[#00abf0] font-audiowide hover:bg-[#00abf0] hover:text-black transition-colors duration-300"
                         >
                           GitHub
                         </a>
@@ -419,7 +419,7 @@ export default function Portfolio() {
                   </div>
 
                   {/* Hover Glow Effect */}
-                  <div className="absolute inset-0 rounded-2xl bg-[#ff6600]/5 scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+                  <div className="absolute inset-0 rounded-2xl bg-[#00abf0]/5 scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
                 </div>
               ))}
             </div>
@@ -437,13 +437,13 @@ export default function Portfolio() {
                   Let&apos;s discuss how we can bring your digital vision to life.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-4 bg-[#ff6600] text-black font-bold rounded-lg shadow-lg hover:shadow-[#ff6600]/50 transition-all duration-300 font-audiowide text-sm hover:scale-105 border-2 border-[#ff6600] hover:bg-transparent hover:text-[#ff6600] relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-[#ff6600]/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                <button className="px-8 py-4 bg-[#00abf0] text-black font-bold rounded-lg shadow-lg hover:shadow-[#00abf0]/50 transition-all duration-300 font-audiowide text-sm hover:scale-105 border-2 border-[#00abf0] hover:bg-transparent hover:text-[#00abf0] relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-[#00abf0]/20 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                   <span className="relative z-10">Get Started</span>
                 </button>
                 <a
                   href="/projects"
-                  className="px-8 py-4 bg-transparent text-[#ff6600] font-bold rounded-lg border-2 border-[#ff6600] hover:bg-[#ff6600] hover:text-black transition-all duration-300 font-audiowide text-sm hover:scale-105"
+                  className="px-8 py-4 bg-transparent text-[#00abf0] font-bold rounded-lg border-2 border-[#00abf0] hover:bg-[#00abf0] hover:text-black transition-all duration-300 font-audiowide text-sm hover:scale-105"
                 >
                   View All Projects
                 </a>
