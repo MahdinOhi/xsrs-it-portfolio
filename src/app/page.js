@@ -13,14 +13,23 @@ export default function Home() {
   return (
     <>
       <style jsx global>{`
-        /* Hide default cursor */
-        * {
-          cursor: none !important;
+        /* Hide default cursor only on desktop devices */
+        @media (hover: hover) and (pointer: fine) {
+          * {
+            cursor: none !important;
+          }
+          
+          /* Ensure clickable elements are still functional */
+          a, button, input, textarea, [role="button"], [onclick] {
+            cursor: none !important;
+          }
         }
         
-        /* Ensure clickable elements are still functional */
-        a, button, input, textarea, [role="button"], [onclick] {
-          cursor: none !important;
+        /* Show default cursor on mobile/touch devices */
+        @media (hover: none) and (pointer: coarse) {
+          * {
+            cursor: auto !important;
+          }
         }
         
         /* Ensure sticky navbar works properly */
