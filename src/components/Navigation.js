@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,48 +43,48 @@ export default function Navigation() {
             ? 'bg-black/40 border-[#ff6600]/50 hover:border-[#ff6600]/70 hover:bg-black/50' 
             : 'bg-black/20 border-[#ff6600]/30 hover:border-[#ff6600]/60 hover:bg-black/30'
         }`}>
-          <a 
+          <Link 
             href="/"
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Home</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
-          <a 
+          </Link>
+          <Link 
             href="/#about"
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">About Us</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
-          <a 
+          </Link>
+          <Link 
             href="/#services"
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Services</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
-          <a 
+          </Link>
+          <Link 
             href="/portfolio"
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Portfolio</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
-          <a 
+          </Link>
+          <Link 
             href="/projects"
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Projects</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
-          <a 
+          </Link>
+          <Link 
             href="/#contact"
             className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Contact Us</span>
             <div className="absolute inset-0 bg-[#ff6600]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </a>
+          </Link>
         </div>
         
         {/* Enhanced Mobile Menu Button */}
@@ -140,7 +141,7 @@ export default function Navigation() {
           
           <div className="flex flex-col items-center justify-center h-full space-y-6 px-4">
             {/* Menu Items with Staggered Animation */}
-            <a 
+            <Link 
               href="/"
               className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
               style={{animationDelay: '0.1s'}}
@@ -148,8 +149,8 @@ export default function Navigation() {
             >
               <span className="relative z-10">Home</span>
               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="/#about"
               className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
               style={{animationDelay: '0.2s'}}
@@ -157,8 +158,8 @@ export default function Navigation() {
             >
               <span className="relative z-10">About Us</span>
               <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </a>
-             <a 
+            </Link>
+             <Link 
                href="/#services"
                className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
                style={{animationDelay: '0.3s'}}
@@ -166,8 +167,8 @@ export default function Navigation() {
              >
                <span className="relative z-10">Services</span>
                <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-             </a>
-             <a 
+             </Link>
+             <Link 
                href="/portfolio"
                className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
                style={{animationDelay: '0.4s'}}
@@ -175,8 +176,8 @@ export default function Navigation() {
              >
                <span className="relative z-10">Portfolio</span>
                <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-             </a>
-             <a 
+             </Link>
+             <Link 
                href="/projects"
                className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
                style={{animationDelay: '0.5s'}}
@@ -184,8 +185,8 @@ export default function Navigation() {
              >
                <span className="relative z-10">Projects</span>
                <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-             </a>
-             <a 
+             </Link>
+             <Link 
                href="/#contact"
                className="text-white hover:text-[#ff6600] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#ff6600]/10 transform translate-y-4 opacity-0 animate-fade-in"
                style={{animationDelay: '0.6s'}}
@@ -193,7 +194,7 @@ export default function Navigation() {
              >
                <span className="relative z-10">Contact Us</span>
                <div className="absolute inset-0 bg-[#ff6600]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-             </a>
+             </Link>
             
             {/* Enhanced Close Button */}
             <button 

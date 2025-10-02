@@ -464,7 +464,7 @@ export default function Projects() {
                 Ready to Start Your Project?
               </h2>
               <p className="text-lg text-gray-300 font-audiowide">
-                Let's discuss how we can bring your digital vision to life.
+                Let&apos;s discuss how we can bring your digital vision to life.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="px-8 py-4 bg-[#ff6600] text-black font-bold rounded-lg shadow-lg hover:shadow-[#ff6600]/50 transition-all duration-300 font-audiowide text-sm hover:scale-105 border-2 border-[#ff6600] hover:bg-transparent hover:text-[#ff6600] relative overflow-hidden group">
