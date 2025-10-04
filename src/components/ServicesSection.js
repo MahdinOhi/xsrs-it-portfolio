@@ -5,47 +5,87 @@ export default function ServicesSection() {
   const services = [
     {
       title: "Software Development",
-      description: "Custom software solutions built with cutting-edge technologies to meet your specific business requirements.",
+      description: "Scalable, reliable, and custom-built software tailored for your business needs.",
       icon: (
         <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#00abf0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       ),
-      features: ["Custom Applications", "API Development", "Database Design", "Performance Optimization"],
-      technologies: ["React", "Node.js", "Python", "PostgreSQL"]
+      programming: ["C++", "Java", "Python", "Node.js"],
+      frameworks: [".NET", "Spring Boot", "Django"],
+      databases: ["MySQL", "PostgreSQL", "MongoDB"],
+      cloud: ["AWS", "Azure"],
+      tags: ["API.json", "main.cpp", "app.jar", "schema.sql", "config.yaml"]
     },
     {
-      title: "Web Development",
-      description: "Responsive and interactive websites that provide exceptional user experiences across all devices.",
+      title: "Website Development",
+      description: "Engaging websites that are fast, secure, and designed to convert.",
       icon: (
         <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#00abf0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
         </svg>
       ),
-      features: ["Responsive Design", "SEO Optimization", "Fast Loading", "Cross-browser Compatibility"],
-      technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"]
+      frontend: ["HTML5", "CSS3", "JavaScript", "React", "Next.js"],
+      backend: ["PHP", "Laravel", "Node.js"],
+      cms: ["WordPress", "Webflow"],
+      hosting: ["SSL", "CDN", "Cloudflare"],
+      tags: ["index.html", "style.css", "app.js", "functions.php", "server.conf"]
     },
     {
-      title: "Mobile Development",
-      description: "Native and cross-platform mobile applications that deliver seamless user experiences on iOS and Android.",
+      title: "App Development",
+      description: "High-performance mobile apps built for both Android and iOS.",
       icon: (
         <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#00abf0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      features: ["Native Performance", "Cross-platform", "Offline Support", "Push Notifications"],
-      technologies: ["React Native", "Flutter", "Swift", "Kotlin"]
+      native: ["Kotlin", "Swift"],
+      crossPlatform: ["Flutter", "React Native"],
+      apis: ["REST", "GraphQL", "Firebase"],
+      testing: ["Appium", "Selenium"],
+      tags: ["MainActivity.kt", "App.swift", "pubspec.yaml", "package.json", "google-services.json"]
     },
     {
-      title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and deployment solutions to ensure your applications perform optimally.",
+      title: "SEO (Search Engine Optimization)",
+      description: "Optimizing your digital presence to rank higher and reach further.",
       icon: (
         <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#00abf0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
       ),
-      features: ["Auto-scaling", "Load Balancing", "Data Backup", "Security Monitoring"],
-      technologies: ["AWS", "Docker", "Kubernetes", "Terraform"]
+      onPage: ["Keyword Research", "Content Optimization", "Meta Tags"],
+      offPage: ["Backlinking", "Guest Posting"],
+      tools: ["Google Analytics", "SEMrush", "Ahrefs"],
+      technical: ["Site Speed", "Mobile Optimization"],
+      tags: ["sitemap.xml", "robots.txt", "analytics.js", "meta.json", "keywords.csv"]
+    },
+    {
+      title: "UI/UX Design",
+      description: "Human-centered designs that enhance user experiences and brand identity.",
+      icon: (
+        <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#00abf0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
+        </svg>
+      ),
+      tools: ["Figma", "Adobe XD", "Illustrator", "Photoshop"],
+      methods: ["Wireframing", "Prototyping", "Usability Testing"],
+      designSystems: ["Material UI", "TailwindCSS"],
+      approach: ["Minimal", "Clean", "Intuitive"],
+      tags: ["wireframe.fig", "mockup.psd", "prototype.xd", "logo.ai", "styleguide.pdf"]
+    },
+    {
+      title: "Video Production",
+      description: "Compelling video content that tells your story and engages audiences.",
+      icon: (
+        <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#00abf0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        </svg>
+      ),
+      editing: ["Adobe Premiere Pro", "Final Cut Pro"],
+      motionGraphics: ["After Effects", "Blender"],
+      types: ["Explainer Videos", "Ads", "Corporate Films"],
+      addons: ["Scriptwriting", "Voiceovers", "Animation"],
+      tags: ["final_cut.mov", "project.aep", "render.mp4", "animation.blend", "storyboard.pdf"]
     }
   ];
 
@@ -64,7 +104,7 @@ export default function ServicesSection() {
         />
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

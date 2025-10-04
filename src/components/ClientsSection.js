@@ -29,10 +29,10 @@ export default function ClientsSection() {
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-white font-audiowide mb-2 group-hover:text-[#00abf0] transition-colors duration-300">
-                  TechCorp
+                  TechCorp Solutions
                 </h3>
                 <p className="text-gray-300 text-sm font-audiowide">
-                  Technology Solutions
+                  Leading technology company specializing in enterprise software solutions.
                 </p>
               </div>
               <div className="absolute inset-0 rounded-2xl bg-[#00abf0]/5 scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
@@ -50,7 +50,7 @@ export default function ClientsSection() {
                   InnovateLab
                 </h3>
                 <p className="text-gray-300 text-sm font-audiowide">
-                  Innovation Hub
+                  Innovation hub focused on cutting-edge research and development projects.
                 </p>
               </div>
               <div className="absolute inset-0 rounded-2xl bg-[#00abf0]/5 scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
@@ -65,10 +65,10 @@ export default function ClientsSection() {
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-white font-audiowide mb-2 group-hover:text-[#00abf0] transition-colors duration-300">
-                  DigitalPro
+                  DigitalPro Agency
                 </h3>
                 <p className="text-gray-300 text-sm font-audiowide">
-                  Digital Agency
+                  Full-service digital agency providing comprehensive marketing solutions.
                 </p>
               </div>
               <div className="absolute inset-0 rounded-2xl bg-[#00abf0]/5 scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
@@ -83,10 +83,10 @@ export default function ClientsSection() {
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-white font-audiowide mb-2 group-hover:text-[#00abf0] transition-colors duration-300">
-                  CloudTech
+                  CloudTech Solutions
                 </h3>
                 <p className="text-gray-300 text-sm font-audiowide">
-                  Cloud Solutions
+                  Cloud infrastructure provider delivering scalable and secure solutions.
                 </p>
               </div>
               <div className="absolute inset-0 rounded-2xl bg-[#00abf0]/5 scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
@@ -104,7 +104,7 @@ export default function ClientsSection() {
                   FinanceApp
                 </h3>
                 <p className="text-gray-300 text-sm font-audiowide">
-                  Financial Services
+                  Financial technology company revolutionizing digital banking experiences.
                 </p>
               </div>
               <div className="absolute inset-0 rounded-2xl bg-[#00abf0]/5 scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>

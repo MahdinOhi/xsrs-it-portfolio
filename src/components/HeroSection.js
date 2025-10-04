@@ -31,16 +31,16 @@ export default function HeroSection() {
   return (
     <section className="relative z-10 min-h-[calc(100vh-80px)] px-4 sm:px-6 lg:px-8 py-16 md:py-24">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
+        <div className="text-center">
           
-          {/* Left Column - Text Content */}
+          {/* Hero Content - Center Aligned */}
           <div className={`text-white transition-all duration-1000 ease-out ${
             isLoaded 
-              ? 'opacity-100 translate-x-0' 
-              : 'opacity-0 -translate-x-10'
+              ? 'opacity-100 translate-y-0' 
+              : 'opacity-0 -translate-y-10'
           }`}>
-            <div className="space-y-6 sm:space-y-8 lg:space-y-10">
-              <div className="space-y-2">
+            <div className="space-y-6 sm:space-y-8 lg:space-y-10 max-w-4xl mx-auto">
+              <div className="space-y-4">
                 <div 
                   className={`text-base sm:text-lg md:text-xl lg:text-2xl text-[#00abf0] font-audiowide transition-all duration-1000 ease-out ${
                     isLoaded 
@@ -48,7 +48,7 @@ export default function HeroSection() {
                       : 'opacity-0 -translate-y-5'
                   }`}
                 >
-                  Welcome to
+                  Welcome to XSRS IT
                 </div>
                 <h1 
                   className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight font-audiowide text-white ${
@@ -57,22 +57,21 @@ export default function HeroSection() {
                       : ''
                   }`}
                 >
-                  <span className="text-[#00abf0]">XSRS-IT</span>
+                  Where Digital Dreams Take Flight
                 </h1>
+                <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed font-audiowide max-w-2xl mx-auto">
+                  Empowering startups, Igniting innovation.
+                </p>
               </div>
               
-              <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed font-audiowide max-w-lg">
-                The best digital solutions for your business.
-              </p>
-              
-              <div className="pt-4 relative">
+              <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
                 {/* Animated Background Elements */}
                 <div className="absolute -top-4 -left-4 w-6 h-6 border border-[#00abf0]/30 rotate-45 animate-spin"></div>
                 <div className="absolute -bottom-2 -right-2 w-4 h-4 bg-[#00abf0]/20 rounded-full animate-pulse"></div>
                 
                 <button
                   onMouseEnter={handleCtaHover}
-                  className={`px-6 sm:px-8 py-3 sm:py-4 bg-[#00abf0] text-black font-bold rounded-lg shadow-lg hover:shadow-[#00abf0]/50 transition-all duration-300 font-audiowide text-xs sm:text-sm hover:scale-105 border-2 border-[#00abf0] hover:bg-transparent hover:text-[#00abf0] relative overflow-hidden group ${
+                  className={`px-8 py-4 bg-[#00abf0] text-black font-bold rounded-lg shadow-lg hover:shadow-[#00abf0]/50 transition-all duration-300 font-audiowide text-sm hover:scale-105 border-2 border-[#00abf0] hover:bg-transparent hover:text-[#00abf0] relative overflow-hidden group ${
                     isLoaded 
                       ? 'opacity-100 scale-100' 
                       : 'opacity-0 scale-90'
@@ -85,66 +84,23 @@ export default function HeroSection() {
                   {/* Button Shine Effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   
-                  <span className="relative z-10">Discover Now</span>
+                  <span className="relative z-10">Get Started</span>
+                </button>
+                
+                <button
+                  className={`px-8 py-4 bg-transparent text-[#00abf0] font-bold rounded-lg border-2 border-[#00abf0] hover:bg-[#00abf0] hover:text-black transition-all duration-300 font-audiowide text-sm hover:scale-105 relative overflow-hidden group ${
+                    isLoaded 
+                      ? 'opacity-100 scale-100' 
+                      : 'opacity-0 scale-90'
+                  }`}
+                  style={{ transitionDelay: '1000ms' }}
+                >
+                  <span className="relative z-10">Learn More</span>
                 </button>
                 
                 {/* Floating Action Elements */}
                 <div className="absolute top-1/2 -right-8 w-3 h-3 bg-[#00abf0] rounded-full animate-bounce"></div>
                 <div className="absolute -top-2 left-1/2 w-2 h-2 border border-[#00abf0] rotate-45 animate-ping"></div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Product Showcase */}
-          <div className={`relative transition-all duration-1000 ease-out delay-300 ${
-            isLoaded 
-              ? 'opacity-100 translate-x-0' 
-              : 'opacity-0 translate-x-10'
-          }`}>
-            {/* Retro Background Circle */}
-            <div className="relative w-full h-80 sm:h-96 lg:h-[500px] flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#ff6600]/20 to-transparent rounded-full blur-3xl"></div>
-              <div className="relative z-10 w-full h-full flex items-center justify-center">
-                
-                {/* Product Slider Container */}
-                <div className="relative w-full max-w-sm sm:max-w-md mx-auto">
-                  <div className="relative overflow-hidden rounded-2xl bg-black/30 backdrop-blur-sm border border-[#00abf0]/30 p-4 sm:p-6 lg:p-8">
-                    
-                    {/* Retro Terminal Display */}
-                    <div className="bg-black rounded-lg p-4 border border-[#00abf0]/50 relative overflow-hidden">
-                      <div className="flex items-center space-x-2 mb-3">
-                        <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-                        <div className="w-3 h-3 bg-yellow-500 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-                      </div>
-                      <div className="text-[#00abf0] font-mono text-xs sm:text-sm">
-                        <div className="animate-pulse">$ XSRS-IT v2.0.1</div>
-                        <div className="text-white mt-2 flex items-center">
-                          <span>Loading digital solutions</span>
-                          <span className="animate-pulse ml-1">...</span>
-                        </div>
-                        <div className="text-[#00abf0] mt-1 animate-fade-in" style={{animationDelay: '2s'}}>✓ Web Development</div>
-                        <div className="text-[#00abf0] mt-1 animate-fade-in" style={{animationDelay: '3s'}}>✓ Mobile Apps</div>
-                        <div className="text-[#00abf0] mt-1 animate-fade-in" style={{animationDelay: '4s'}}>✓ Cloud Solutions</div>
-                        <div className="text-white mt-2 animate-fade-in" style={{animationDelay: '5s'}}>Ready to innovate!</div>
-                      </div>
-                      
-                      {/* Terminal Cursor */}
-                      <div className="absolute bottom-4 right-4 w-2 h-4 bg-[#00abf0] animate-pulse"></div>
-                    </div>
-                    
-                    {/* Enhanced Floating Elements */}
-                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#00abf0] rounded-full animate-bounce"></div>
-                    <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-[#00abf0]/50 rounded-full animate-pulse"></div>
-                    <div className="absolute top-1/2 -right-6 w-4 h-4 border border-[#00abf0] rotate-45 animate-spin"></div>
-                    <div className="absolute -top-2 left-1/2 w-3 h-3 bg-[#00abf0] rounded-full animate-ping"></div>
-                    <div className="absolute bottom-1/4 -left-2 w-5 h-5 border-2 border-[#00abf0] rounded-full animate-pulse"></div>
-                    
-                    {/* Animated Border Glow */}
-                    <div className="absolute inset-0 rounded-2xl border-2 border-[#00abf0]/30 animate-pulse"></div>
-                    <div className="absolute inset-0 rounded-2xl border border-[#00abf0]/60 animate-ping"></div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

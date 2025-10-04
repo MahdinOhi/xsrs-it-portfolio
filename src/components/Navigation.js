@@ -38,7 +38,7 @@ export default function Navigation() {
           : 'bg-[#0a0a0a]/80 backdrop-blur-md border-b border-[#00abf0]/20'
       }`}>
         {/* Desktop Navigation */}
-        <div className={`hidden md:flex items-center space-x-6 lg:space-x-8 backdrop-blur-sm rounded-full px-6 lg:px-8 py-3 lg:py-4 border transition-all duration-300 hover:shadow-lg hover:shadow-[#00abf0]/20 ${
+        <div className={`hidden md:flex items-center justify-center space-x-6 lg:space-x-8 backdrop-blur-sm rounded-full px-6 lg:px-8 py-3 lg:py-4 border transition-all duration-300 hover:shadow-lg hover:shadow-[#00abf0]/20 ${
           isScrolled 
             ? 'bg-black/40 border-[#00abf0]/50 hover:border-[#00abf0]/70 hover:bg-black/50' 
             : 'bg-black/20 border-[#00abf0]/30 hover:border-[#00abf0]/60 hover:bg-black/30'
@@ -48,13 +48,6 @@ export default function Navigation() {
             className="text-white hover:text-[#00abf0] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
             <span className="relative z-10">Home</span>
-            <div className="absolute inset-0 bg-[#00abf0]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-          </Link>
-          <Link 
-            href="/#about"
-            className="text-white hover:text-[#00abf0] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
-          >
-            <span className="relative z-10">About Us</span>
             <div className="absolute inset-0 bg-[#00abf0]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
           </Link>
           <Link 
@@ -79,10 +72,17 @@ export default function Navigation() {
             <div className="absolute inset-0 bg-[#00abf0]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
           </Link>
           <Link 
+            href="/#about"
+            className="text-white hover:text-[#00abf0] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
+          >
+            <span className="relative z-10">About us</span>
+            <div className="absolute inset-0 bg-[#00abf0]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+          </Link>
+          <Link 
             href="/#contact"
             className="text-white hover:text-[#00abf0] transition-all duration-300 font-space-mono text-xs lg:text-sm relative group hover:scale-105 hover:drop-shadow-[0_0_8px_rgba(255,102,0,0.6)]"
           >
-            <span className="relative z-10">Contact Us</span>
+            <span className="relative z-10">Contact us</span>
             <div className="absolute inset-0 bg-[#00abf0]/10 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
           </Link>
         </div>
@@ -150,19 +150,10 @@ export default function Navigation() {
               <span className="relative z-10">Home</span>
               <div className="absolute inset-0 bg-[#00abf0]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
             </Link>
-            <Link 
-              href="/#about"
-              className="text-white hover:text-[#00abf0] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#00abf0]/10 transform translate-y-4 opacity-0 animate-fade-in"
-              style={{animationDelay: '0.2s'}}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              <span className="relative z-10">About Us</span>
-              <div className="absolute inset-0 bg-[#00abf0]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
-            </Link>
              <Link 
                href="/#services"
                className="text-white hover:text-[#00abf0] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#00abf0]/10 transform translate-y-4 opacity-0 animate-fade-in"
-               style={{animationDelay: '0.3s'}}
+               style={{animationDelay: '0.2s'}}
                onClick={() => setIsMobileMenuOpen(false)}
              >
                <span className="relative z-10">Services</span>
@@ -171,7 +162,7 @@ export default function Navigation() {
              <Link 
                href="/portfolio"
                className="text-white hover:text-[#00abf0] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#00abf0]/10 transform translate-y-4 opacity-0 animate-fade-in"
-               style={{animationDelay: '0.4s'}}
+               style={{animationDelay: '0.3s'}}
                onClick={() => setIsMobileMenuOpen(false)}
              >
                <span className="relative z-10">Portfolio</span>
@@ -180,10 +171,19 @@ export default function Navigation() {
              <Link 
                href="/projects"
                className="text-white hover:text-[#00abf0] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#00abf0]/10 transform translate-y-4 opacity-0 animate-fade-in"
-               style={{animationDelay: '0.5s'}}
+               style={{animationDelay: '0.4s'}}
                onClick={() => setIsMobileMenuOpen(false)}
              >
                <span className="relative z-10">Projects</span>
+               <div className="absolute inset-0 bg-[#00abf0]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
+             </Link>
+             <Link 
+               href="/#about"
+               className="text-white hover:text-[#00abf0] transition-all duration-300 font-space-mono text-lg relative group hover:scale-110 hover:drop-shadow-[0_0_12px_rgba(255,102,0,0.8)] px-6 py-3 rounded-lg hover:bg-[#00abf0]/10 transform translate-y-4 opacity-0 animate-fade-in"
+               style={{animationDelay: '0.5s'}}
+               onClick={() => setIsMobileMenuOpen(false)}
+             >
+               <span className="relative z-10">About us</span>
                <div className="absolute inset-0 bg-[#00abf0]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
              </Link>
              <Link 
@@ -192,7 +192,7 @@ export default function Navigation() {
                style={{animationDelay: '0.6s'}}
                onClick={() => setIsMobileMenuOpen(false)}
              >
-               <span className="relative z-10">Contact Us</span>
+               <span className="relative z-10">Contact us</span>
                <div className="absolute inset-0 bg-[#00abf0]/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 -z-10"></div>
              </Link>
             

@@ -11,138 +11,178 @@ export default function Projects() {
     {
       id: 1,
       title: "E-Commerce Platform",
+      client: "TechCorp Solutions",
       category: "Web Development",
+      serviceName: "Website Development",
       description: "A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
       longDescription: "A comprehensive e-commerce platform built with modern technologies, featuring real-time inventory tracking, secure payment processing, and an intuitive admin dashboard. The platform supports multiple payment gateways, automated order processing, and advanced analytics for business insights.",
       image: "/api/placeholder/400/300",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express"],
+      tools: ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express", "AWS", "Docker"],
+      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express", "AWS", "Docker"],
       status: "Completed",
       year: "2024",
       duration: "6 months",
-      client: "TechCorp Solutions",
+      timePeriod: "Jan 2024 - Jun 2024",
+      date: "June 15, 2024",
       features: ["Payment Integration", "Inventory Management", "Admin Dashboard", "Real-time Analytics", "Mobile Responsive"],
       results: ["300% increase in sales", "50% reduction in order processing time", "99.9% uptime achieved"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
+      tags: ["E-commerce", "Payment Gateway", "Inventory", "Analytics", "Mobile-First"]
     },
     {
       id: 2,
       title: "Mobile Banking App",
+      client: "SecureBank Ltd",
       category: "Mobile Development",
+      serviceName: "Mobile App Development",
       description: "Secure mobile banking application with biometric authentication and real-time transaction monitoring.",
       longDescription: "A cutting-edge mobile banking application designed for security and user experience. Features include biometric authentication, real-time transaction monitoring, AI-powered fraud detection, and seamless integration with existing banking systems.",
       image: "/api/placeholder/400/300",
+      tools: ["React Native", "Firebase", "Node.js", "AWS", "Biometric Auth", "Blockchain"],
       technologies: ["React Native", "Firebase", "Node.js", "AWS", "Biometric Auth", "Blockchain"],
       status: "Completed",
       year: "2024",
       duration: "8 months",
-      client: "SecureBank Ltd",
+      timePeriod: "Feb 2024 - Sep 2024",
+      date: "September 20, 2024",
       features: ["Biometric Authentication", "Real-time Monitoring", "Fraud Detection", "Multi-currency Support", "Offline Capability"],
       results: ["40% increase in user engagement", "Zero security breaches", "4.8/5 app store rating"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
+      tags: ["Mobile", "Banking", "Security", "Biometric", "Fintech"]
     },
     {
       id: 3,
       title: "AI-Powered Analytics",
+      client: "DataInsight Corp",
       category: "AI/ML",
+      serviceName: "AI/ML Development",
       description: "Machine learning platform for business intelligence with predictive analytics and data visualization.",
       longDescription: "An advanced AI-powered analytics platform that transforms raw data into actionable business insights. Features machine learning algorithms for predictive analytics, automated report generation, and interactive data visualization dashboards.",
       image: "/api/placeholder/400/300",
+      tools: ["Python", "TensorFlow", "React", "PostgreSQL", "Docker", "Kubernetes"],
       technologies: ["Python", "TensorFlow", "React", "PostgreSQL", "Docker", "Kubernetes"],
       status: "In Progress",
       year: "2024",
       duration: "10 months",
-      client: "DataInsight Corp",
+      timePeriod: "Mar 2024 - Dec 2024",
+      date: "December 15, 2024",
       features: ["Predictive Analytics", "Automated Reports", "Data Visualization", "Real-time Processing", "API Integration"],
       results: ["85% accuracy in predictions", "60% reduction in manual reporting", "Real-time insights delivery"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
+      tags: ["AI", "Machine Learning", "Analytics", "Data Science", "Predictive"]
     },
     {
       id: 4,
       title: "Cloud Infrastructure",
+      client: "CloudTech Enterprises",
       category: "Cloud Solutions",
+      serviceName: "Cloud Infrastructure",
       description: "Scalable cloud infrastructure setup with automated deployment and monitoring systems.",
       longDescription: "A robust cloud infrastructure solution designed for scalability and reliability. Features automated deployment pipelines, comprehensive monitoring systems, auto-scaling capabilities, and disaster recovery protocols.",
       image: "/api/placeholder/400/300",
+      tools: ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Prometheus"],
       technologies: ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Prometheus"],
       status: "Completed",
       year: "2023",
       duration: "4 months",
-      client: "CloudTech Enterprises",
+      timePeriod: "Aug 2023 - Nov 2023",
+      date: "November 30, 2023",
       features: ["Auto-scaling", "Automated Deployment", "Monitoring & Alerting", "Disaster Recovery", "Cost Optimization"],
       results: ["99.99% uptime", "50% cost reduction", "3x faster deployments"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
+      tags: ["Cloud", "DevOps", "Infrastructure", "AWS", "Kubernetes"]
     },
     {
       id: 5,
       title: "Digital Marketing Platform",
+      client: "MarketingPro Inc",
       category: "Web Development",
+      serviceName: "Marketing Platform",
       description: "Comprehensive marketing automation platform with campaign management and analytics.",
       longDescription: "A comprehensive digital marketing platform that streamlines campaign management, automates customer journeys, and provides detailed analytics. Features include email marketing, social media management, lead scoring, and ROI tracking.",
       image: "/api/placeholder/400/300",
+      tools: ["Vue.js", "Laravel", "MySQL", "Redis", "Elasticsearch", "WebSocket"],
       technologies: ["Vue.js", "Laravel", "MySQL", "Redis", "Elasticsearch", "WebSocket"],
       status: "Completed",
       year: "2023",
       duration: "7 months",
-      client: "MarketingPro Inc",
+      timePeriod: "Jan 2023 - Jul 2023",
+      date: "July 25, 2023",
       features: ["Campaign Management", "Email Automation", "Social Media Integration", "Lead Scoring", "ROI Analytics"],
       results: ["200% increase in lead conversion", "35% improvement in campaign ROI", "50% reduction in manual tasks"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
+      tags: ["Marketing", "Automation", "Analytics", "Campaign", "Lead Generation"]
     },
     {
       id: 6,
       title: "IoT Smart Home System",
+      client: "SmartHome Solutions",
       category: "IoT Development",
+      serviceName: "IoT Development",
       description: "Connected home automation system with mobile app control and voice integration.",
       longDescription: "An innovative IoT smart home system that connects and controls various home devices through a unified platform. Features include voice control, mobile app management, energy monitoring, and security integration.",
       image: "/api/placeholder/400/300",
+      tools: ["Arduino", "React Native", "MQTT", "Node.js", "Raspberry Pi", "AWS IoT"],
       technologies: ["Arduino", "React Native", "MQTT", "Node.js", "Raspberry Pi", "AWS IoT"],
       status: "Completed",
       year: "2023",
       duration: "5 months",
-      client: "SmartHome Solutions",
+      timePeriod: "Mar 2023 - Jul 2023",
+      date: "July 10, 2023",
       features: ["Voice Control", "Mobile App", "Energy Monitoring", "Security Integration", "Remote Access"],
       results: ["30% energy savings", "95% user satisfaction", "Zero security incidents"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
+      tags: ["IoT", "Smart Home", "Automation", "Mobile", "Energy"]
     },
     {
       id: 7,
       title: "Blockchain Voting System",
+      client: "ElectionTech Corp",
       category: "Blockchain",
+      serviceName: "Blockchain Development",
       description: "Secure and transparent voting platform built on blockchain technology.",
       longDescription: "A revolutionary blockchain-based voting system that ensures transparency, security, and immutability. Features include voter authentication, encrypted ballots, real-time results, and audit trails.",
       image: "/api/placeholder/400/300",
+      tools: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS", "MetaMask"],
       technologies: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS", "MetaMask"],
       status: "Completed",
       year: "2023",
       duration: "9 months",
-      client: "ElectionTech Corp",
+      timePeriod: "Jan 2023 - Sep 2023",
+      date: "September 15, 2023",
       features: ["Voter Authentication", "Encrypted Ballots", "Real-time Results", "Audit Trails", "Mobile Support"],
       results: ["100% transparency", "Zero fraud incidents", "99.9% voter satisfaction"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
+      tags: ["Blockchain", "Voting", "Security", "Transparency", "Ethereum"]
     },
     {
       id: 8,
       title: "AR Shopping Experience",
+      client: "RetailTech Innovations",
       category: "AR/VR",
+      serviceName: "AR/VR Development",
       description: "Augmented reality shopping app with virtual try-on and 3D product visualization.",
       longDescription: "An innovative AR shopping application that allows customers to virtually try on products and visualize items in their space. Features include 3D product models, virtual fitting rooms, and interactive product demonstrations.",
       image: "/api/placeholder/400/300",
+      tools: ["Unity", "ARCore", "React Native", "3D Modeling", "Machine Learning", "Cloud Storage"],
       technologies: ["Unity", "ARCore", "React Native", "3D Modeling", "Machine Learning", "Cloud Storage"],
       status: "In Progress",
       year: "2024",
       duration: "12 months",
-      client: "RetailTech Innovations",
+      timePeriod: "Apr 2024 - Mar 2025",
+      date: "March 30, 2025",
       features: ["Virtual Try-on", "3D Visualization", "Interactive Demos", "Real-time Tracking", "Social Sharing"],
       results: ["45% increase in conversion", "60% reduction in returns", "4.7/5 user rating"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
+      tags: ["AR", "VR", "Shopping", "3D", "Mobile"]
     }
   ];
 
@@ -249,16 +289,11 @@ export default function Projects() {
         <section className="relative z-10 pt-20 pb-16 md:pb-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
             <div className={`space-y-6 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="text-[#00abf0] font-audiowide text-sm uppercase tracking-wider">
-                Our Projects
-              </div>
               <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold text-white font-audiowide leading-tight">
-                Innovative Solutions
-                <span className="text-[#00abf0] block">That Transform Business</span>
+                Turning ideas into digital realities.
               </h1>
-              <p className="text-lg text-gray-300 leading-relaxed font-audiowide max-w-3xl mx-auto">
-                Discover our comprehensive portfolio of cutting-edge projects across web development, 
-                mobile apps, AI/ML, cloud solutions, blockchain, and emerging technologies.
+              <p className="text-lg text-gray-300 leading-relaxed font-audiowide max-w-4xl mx-auto">
+                Our projects are built on innovation, precision, and creativity. Each one reflects our passion for solving challenges and delivering meaningful results — from custom software to powerful designs, apps, and digital campaigns.
               </p>
             </div>
           </div>
@@ -310,15 +345,15 @@ export default function Projects() {
               </div>
               <div className="text-center space-y-2">
                 <div className="text-3xl font-bold text-[#00abf0] font-audiowide">
-                  8+
+                  {filteredProjects.filter(p => p.status === 'In Progress').length}
                 </div>
                 <div className="text-sm text-gray-300 font-audiowide">
-                  Technologies
+                  In Progress
                 </div>
               </div>
               <div className="text-center space-y-2">
                 <div className="text-3xl font-bold text-[#00abf0] font-audiowide">
-                  100%
+                  {Math.round((filteredProjects.filter(p => p.status === 'Completed').length / filteredProjects.length) * 100)}%
                 </div>
                 <div className="text-sm text-gray-300 font-audiowide">
                   Success Rate
@@ -356,16 +391,25 @@ export default function Projects() {
                       <span className={`px-3 py-1 rounded-full text-xs font-audiowide ${
                         project.status === 'Completed' 
                           ? 'bg-green-500/20 text-green-400 border border-green-500/30'
-                          : 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30'
+                          : project.status === 'In Progress'
+                          ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30'
+                          : 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
                       }`}>
                         {project.status}
                       </span>
                     </div>
 
-                    {/* Duration Badge */}
+                    {/* Service Name Badge */}
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-[#00abf0]/20 text-[#00abf0] text-xs rounded-full font-audiowide border border-[#00abf0]/30">
-                        {project.duration}
+                        {project.serviceName}
+                      </span>
+                    </div>
+
+                    {/* Time Period Badge */}
+                    <div className="absolute bottom-4 left-4">
+                      <span className="px-3 py-1 bg-black/50 text-white text-xs rounded-full font-audiowide backdrop-blur-sm">
+                        {project.timePeriod}
                       </span>
                     </div>
                   </div>
@@ -381,51 +425,39 @@ export default function Projects() {
                       </p>
                     </div>
 
-                    {/* Key Features */}
-                    <div className="space-y-2">
-                      <div className="text-[#00abf0] text-xs font-audiowide uppercase tracking-wider">
-                        Key Features
-                      </div>
-                      <div className="flex flex-wrap gap-1">
-                        {project.features.slice(0, 3).map((feature, featureIndex) => (
-                          <span
-                            key={featureIndex}
-                            className="px-2 py-1 bg-[#00abf0]/10 text-[#00abf0] text-xs rounded font-audiowide border border-[#00abf0]/30"
-                          >
-                            {feature}
-                          </span>
-                        ))}
-                        {project.features.length > 3 && (
-                          <span className="px-2 py-1 bg-gray-500/10 text-gray-400 text-xs rounded font-audiowide border border-gray-500/30">
-                            +{project.features.length - 3} more
-                          </span>
-                        )}
-                      </div>
+                    {/* Client and Date Info */}
+                    <div className="flex justify-between items-center text-sm">
+                      <span className="text-[#00abf0] font-audiowide">
+                        Client: {project.client}
+                      </span>
+                      <span className="text-gray-400 font-audiowide">
+                        {project.date}
+                      </span>
                     </div>
 
-                    {/* Technologies */}
+                    {/* Tools and Technologies */}
                     <div className="space-y-2">
                       <div className="text-[#00abf0] text-xs font-audiowide uppercase tracking-wider">
-                        Technologies
+                        Tools & Technologies
                       </div>
                       <div className="flex flex-wrap gap-2">
-                        {project.technologies.slice(0, 4).map((tech, techIndex) => (
+                        {project.tools.slice(0, 4).map((tool, toolIndex) => (
                           <span
-                            key={techIndex}
+                            key={toolIndex}
                             className="px-2 py-1 bg-[#00abf0]/10 text-[#00abf0] text-xs rounded font-audiowide border border-[#00abf0]/30"
                           >
-                            {tech}
+                            {tool}
                           </span>
                         ))}
-                        {project.technologies.length > 4 && (
+                        {project.tools.length > 4 && (
                           <span className="px-2 py-1 bg-gray-500/10 text-gray-400 text-xs rounded font-audiowide border border-gray-500/30">
-                            +{project.technologies.length - 4}
+                            +{project.tools.length - 4}
                           </span>
                         )}
                       </div>
                     </div>
 
-                    {/* Results Preview */}
+                    {/* Key Results */}
                     <div className="space-y-2">
                       <div className="text-[#00abf0] text-xs font-audiowide uppercase tracking-wider">
                         Key Results
@@ -435,24 +467,46 @@ export default function Projects() {
                       </div>
                     </div>
 
+                    {/* Important Tags */}
+                    <div className="space-y-2">
+                      <div className="text-[#00abf0] text-xs font-audiowide uppercase tracking-wider">
+                        Tags
+                      </div>
+                      <div className="flex flex-wrap gap-1">
+                        {project.tags.slice(0, 3).map((tag, tagIndex) => (
+                          <span
+                            key={tagIndex}
+                            className="px-2 py-1 bg-[#ff6600]/10 text-[#ff6600] text-xs rounded font-audiowide border border-[#ff6600]/30"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                        {project.tags.length > 3 && (
+                          <span className="px-2 py-1 bg-gray-500/10 text-gray-400 text-xs rounded font-audiowide border border-gray-500/30">
+                            +{project.tags.length - 3}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
                     {/* Action Buttons */}
                     <div className="flex justify-between items-center pt-4 border-t border-[#00abf0]/20">
                       <div className="flex space-x-2">
                         <a
                           href={project.liveUrl}
-                          className="px-3 py-1 bg-[#00abf0] text-black text-xs rounded font-audiowide hover:bg-[#00abf0]/80 transition-colors duration-300"
+                          className="px-4 py-2 bg-[#00abf0] text-black text-sm rounded font-audiowide hover:bg-[#00abf0]/80 transition-colors duration-300 font-bold"
                         >
                           Live Demo
                         </a>
                         <a
                           href={project.githubUrl}
-                          className="px-3 py-1 bg-transparent text-[#00abf0] text-xs rounded border border-[#00abf0] font-audiowide hover:bg-[#00abf0] hover:text-black transition-colors duration-300"
+                          className="px-4 py-2 bg-transparent text-[#00abf0] text-sm rounded border border-[#00abf0] font-audiowide hover:bg-[#00abf0] hover:text-black transition-colors duration-300"
                         >
                           GitHub
                         </a>
                       </div>
                       <span className="text-gray-400 text-xs font-audiowide">
-                        {project.year}
+                        {project.duration}
                       </span>
                     </div>
                   </div>
@@ -470,7 +524,7 @@ export default function Projects() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-white font-audiowide">
-                Ready to Start Your Project?
+                Ready to start your journey
               </h2>
               <p className="text-lg text-gray-300 font-audiowide">
                 Let&apos;s discuss how we can bring your digital vision to life.
@@ -484,7 +538,7 @@ export default function Projects() {
                   href="/portfolio"
                   className="px-8 py-4 bg-transparent text-[#00abf0] font-bold rounded-lg border-2 border-[#00abf0] hover:bg-[#00abf0] hover:text-black transition-all duration-300 font-audiowide text-sm hover:scale-105"
                 >
-                  View Portfolio
+                  Portfolio
                 </a>
               </div>
             </div>
