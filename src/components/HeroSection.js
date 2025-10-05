@@ -29,8 +29,8 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative z-10 min-h-[calc(100vh-80px)] px-4 sm:px-6 lg:px-8 py-16 md:py-24 overflow-x-hidden max-w-full">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative z-10 min-h-[calc(100vh-80px)] w-full py-16 md:py-24 overflow-x-hidden">
+      <div className="content-container">
         <div className="text-center">
           
           {/* Hero Content - Center Aligned */}
@@ -108,7 +108,7 @@ export default function HeroSection() {
       </div>
 
       {/* Additional Floating Elements Around Content */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden max-w-full">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden w-full">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#00abf0] rounded-full animate-float"></div>
         <div className="absolute top-3/4 right-1/4 w-3 h-3 border border-[#00abf0] rotate-45 animate-spin"></div>
         <div className="absolute top-1/2 left-1/6 w-1 h-1 bg-[#00abf0] rounded-full animate-pulse"></div>

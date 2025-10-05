@@ -207,7 +207,8 @@ export default function Portfolio() {
         }
       `}</style>
       
-      <div className="min-h-screen bg-[#0a0a0a] text-white relative overflow-x-hidden max-w-full">
+      <div className="min-h-screen bg-[#0a0a0a] text-white relative overflow-x-hidden w-full">
+        <div className="main-content">
         {/* Custom Cursor */}
         <CustomCursor />
         
@@ -457,6 +458,7 @@ export default function Portfolio() {
 
         {/* Footer */}
         <Footer />
+        </div>
       </div>
     </>
   );

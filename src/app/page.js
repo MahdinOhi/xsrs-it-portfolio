@@ -85,7 +85,8 @@ export default function Home() {
           animation: glow 2s ease-in-out infinite;
         }
       `}</style>
-      <div className="min-h-screen bg-[#0a0a0a] text-white relative overflow-x-hidden max-w-full">
+      <div className="min-h-screen bg-[#0a0a0a] text-white relative overflow-x-hidden w-full">
+        <div className="main-content">
         {/* Custom Cursor */}
         <CustomCursor />
         
@@ -96,29 +97,30 @@ export default function Home() {
         <Navigation />
 
         {/* Hero Section */}
-        <section id="home" className="relative">
+        <section id="home" className="relative w-full">
           <HeroSection />
         </section>
 
         {/* About Section */}
-        <section id="about" className="relative py-16 md:py-24">
+        <section id="about" className="relative py-16 md:py-24 w-full">
           <AboutSection />
         </section>
 
         {/* Services Section */}
-        <section id="services" className="relative py-16 md:py-24">
+        <section id="services" className="relative py-16 md:py-24 w-full">
           <ServicesSection />
         </section>
 
         {/* Our Clients Section */}
-        <section id="clients" className="relative py-16 md:py-24">
+        <section id="clients" className="relative py-16 md:py-24 w-full">
           <ClientsSection />
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="relative">
+        <section id="contact" className="relative w-full">
           <Footer />
         </section>
+        </div>
       </div>
     </>
   );

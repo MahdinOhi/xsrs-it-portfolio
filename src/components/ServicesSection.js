@@ -90,8 +90,8 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="relative z-10 py-16 sm:py-20 lg:py-24 bg-[#0a0a0a] overflow-x-hidden max-w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative z-10 py-16 sm:py-20 lg:py-24 bg-[#0a0a0a] overflow-x-hidden w-full">
+      <div className="content-container">
         <SectionHeader
           icon={
             <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#00abf0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

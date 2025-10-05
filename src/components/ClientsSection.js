@@ -1,7 +1,7 @@
 export default function ClientsSection() {
   return (
-    <section className="relative z-10 py-16 sm:py-20 lg:py-24 bg-[#0a0a0a]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative z-10 py-16 sm:py-20 lg:py-24 bg-[#0a0a0a] w-full">
+      <div className="content-container">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-[#00abf0]/10 rounded-full mb-6 border border-[#00abf0]/30">

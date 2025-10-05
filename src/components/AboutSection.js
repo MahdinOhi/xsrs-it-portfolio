@@ -40,9 +40,9 @@ export default function AboutSection() {
         }
       `}</style>
       
-      <section className="relative min-h-screen bg-[#0a0a0a] py-16 md:py-24 overflow-hidden max-w-full">
+      <section className="relative min-h-screen bg-[#0a0a0a] py-16 md:py-24 overflow-hidden w-full">
         {/* Background Effects */}
-        <div className="absolute inset-0 overflow-hidden max-w-full">
+        <div className="absolute inset-0 overflow-hidden w-full">
           <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#00abf0] rounded-full animate-float"></div>
           <div className="absolute top-3/4 right-1/4 w-3 h-3 border border-[#00abf0] rotate-45 animate-spin"></div>
           <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-[#00abf0] rounded-full animate-pulse"></div>
@@ -50,7 +50,7 @@ export default function AboutSection() {
           <div className="absolute bottom-0 left-1/2 w-2 h-2 bg-[#00abf0] rounded-full animate-bounce"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 content-container">
           <div className="text-center">
             
             {/* Content - Center Aligned */}
