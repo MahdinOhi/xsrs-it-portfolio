@@ -72,9 +72,9 @@ export default function Footer() {
         }
       `}</style>
       
-      <footer className="relative bg-[#0a0a0a] border-t border-[#00abf0]/20 overflow-hidden py-16 md:py-20">
+      <footer className="relative bg-[#0a0a0a] border-t border-[#00abf0]/20 overflow-hidden py-16 md:py-20 max-w-full">
         {/* Background Effects */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 overflow-hidden max-w-full">
           <div className="absolute top-0 left-1/4 w-2 h-2 bg-[#00abf0] rounded-full animate-float"></div>
           <div className="absolute top-1/4 right-1/4 w-3 h-3 border border-[#00abf0] rotate-45 animate-spin"></div>
           <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-[#00abf0] rounded-full animate-pulse"></div>

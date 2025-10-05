@@ -1,6 +1,6 @@
 export default function BackgroundEffects() {
   return (
-    <div className="absolute inset-0 opacity-20">
+    <div className="absolute inset-0 opacity-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#ff6600]/10 to-transparent"></div>
       <div className="absolute top-0 left-0 w-full h-full opacity-30" style={{
         backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 102, 0, 0.1) 2px, rgba(255, 102, 0, 0.1) 4px)`
@@ -23,7 +23,7 @@ export default function BackgroundEffects() {
       </div>
       
       {/* Floating Geometric Shapes */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden max-w-full">
         {Array.from({ length: 8 }, (_, i) => (
           <div
             key={`shape-${i}`}

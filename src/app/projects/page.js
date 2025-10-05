@@ -275,7 +275,7 @@ export default function Projects() {
         }
       `}</style>
       
-      <div className="min-h-screen bg-[#0a0a0a] text-white relative">
+      <div className="min-h-screen bg-[#0a0a0a] text-white relative overflow-x-hidden max-w-full">
         {/* Custom Cursor */}
         <CustomCursor />
         
